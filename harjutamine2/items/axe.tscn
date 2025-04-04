@@ -1,0 +1,61 @@
+[gd_scene load_steps=7 format=3 uid="uid://bfxe4lxa16hv"]
+
+[ext_resource type="Script" uid="uid://f3w23bskksok" path="res://collectible.gd" id="1_fe6tx"]
+[ext_resource type="Texture2D" uid="uid://c2vp67hb0kqm4" path="res://Sprout Lands - Sprites - Basic pack/Objects/Basic_tools_and_meterials.png" id="2_fvmsh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xu2dy"]
+
+[sub_resource type="Animation" id="Animation_u02de"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_s07a8"]
+resource_name = "bounce"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 1.96667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -5), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sj6u0"]
+_data = {
+&"RESET": SubResource("Animation_u02de"),
+&"bounce": SubResource("Animation_s07a8")
+}
+
+[node name="Area2D" type="StaticBody2D"]
+texture_filter = 1
+script = ExtResource("1_fe6tx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_fvmsh")
+region_enabled = true
+region_rect = Rect2(16, 0, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_xu2dy")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_sj6u0")
+}

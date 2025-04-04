@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://coej7heub25co"]
+
+[ext_resource type="Texture2D" uid="uid://c2vp67hb0kqm4" path="res://Sprout Lands - Sprites - Basic pack/Objects/Basic_tools_and_meterials.png" id="1_37sau"]
+[ext_resource type="Script" uid="uid://f3w23bskksok" path="res://collectible.gd" id="1_ghxvs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y3qkh"]
+
+[sub_resource type="Animation" id="Animation_u02de"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_s07a8"]
+resource_name = "bounce"
+length = 2.0
+loop_mode = 1
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sj6u0"]
+_data = {
+&"RESET": SubResource("Animation_u02de"),
+&"bounce": SubResource("Animation_s07a8")
+}
+
+[node name="StaticBody2D" type="StaticBody2D"]
+texture_filter = 1
+script = ExtResource("1_ghxvs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_y3qkh")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_sj6u0")
+}
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_37sau")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
