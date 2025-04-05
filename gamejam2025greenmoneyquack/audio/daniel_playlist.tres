@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://cxsxt36oo0e1q" path="res://audio/Daniel_Lines/Daniel_Lines/teidOnAinaRohkem_1.mp3" id="5_riufs"]
 
 [resource]
+loop = false
 stream_count = 5
 stream_0 = ExtResource("1_k0qxj")
 stream_1 = ExtResource("2_yglno")
