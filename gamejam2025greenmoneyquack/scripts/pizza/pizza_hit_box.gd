@@ -10,4 +10,4 @@ func _on_area_entered(area: Area2D) -> void:
 		Global.add_debt()
 		get_parent().destroy()
 	else:
-		print("!!!!")
+		print("!!!! pizza not hit jammer or wall")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bhfg0khohm8wl"]
+[gd_scene load_steps=11 format=3 uid="uid://bhfg0khohm8wl"]
 
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://bbafsygr8ytwc" path="res://scenes/player.tscn" id="1_o5qli"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bnjtaybgkinjr" path="res://scenes/wall.tscn" id="5_tbgi4"]
 [ext_resource type="AudioStream" uid="uid://djyxn7mypq4vp" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-12-21.ogg" id="8_tipki"]
 [ext_resource type="PackedScene" uid="uid://bp8k5ooj77vph" path="res://scenes/Finish.tscn" id="9_85g3d"]
+[ext_resource type="PackedScene" uid="uid://5q3gc183gvdw" path="res://scenes/generator.tscn" id="10_choun"]
 
 [node name="Main" type="Node2D"]
 
@@ -61,38 +62,49 @@ text = "Health: "
 [node name="Jammijad" type="Node" parent="."]
 
 [node name="Jammer2" parent="Jammijad" instance=ExtResource("3_sugp2")]
+visible = false
 position = Vector2(-680, 474)
 
 [node name="Jammer" parent="Jammijad" instance=ExtResource("3_sugp2")]
+visible = false
 position = Vector2(-872, 67)
 
 [node name="Jammer3" parent="Jammijad" instance=ExtResource("3_sugp2")]
+visible = false
 position = Vector2(396, -179)
 pizza = 1
 maxHealth = 4
 
 [node name="Jammer4" parent="Jammijad" instance=ExtResource("3_sugp2")]
+visible = false
 position = Vector2(508, -506)
 
 [node name="Jammer5" parent="Jammijad" instance=ExtResource("3_sugp2")]
+visible = false
 position = Vector2(-574, -460)
 
 [node name="Jammer6" parent="Jammijad" instance=ExtResource("3_sugp2")]
+visible = false
 position = Vector2(-354, -58)
 
 [node name="Jammer7" parent="Jammijad" instance=ExtResource("3_sugp2")]
+visible = false
 position = Vector2(-573, -227)
 
 [node name="Jammer8" parent="Jammijad" instance=ExtResource("3_sugp2")]
+visible = false
 position = Vector2(350, 640)
 
 [node name="Jammer9" parent="Jammijad" instance=ExtResource("3_sugp2")]
+visible = false
 position = Vector2(-299, 518)
 
 [node name="Wall" parent="Jammijad" instance=ExtResource("5_tbgi4")]
+visible = false
 position = Vector2(-779, -377)
 
 [node name="Wall2" parent="Jammijad" instance=ExtResource("5_tbgi4")]
+visible = false
 position = Vector2(-230, -495)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -101,3 +113,20 @@ autoplay = true
 
 [node name="finish" parent="." instance=ExtResource("9_85g3d")]
 position = Vector2(125, 1195)
+
+[node name="Generators" type="Node" parent="."]
+
+[node name="Generator" parent="Generators" instance=ExtResource("10_choun")]
+position = Vector2(-531, 533)
+
+[node name="Generator3" parent="Generators" instance=ExtResource("10_choun")]
+position = Vector2(261, 679)
+
+[node name="Generator4" parent="Generators" instance=ExtResource("10_choun")]
+position = Vector2(-305, 399)
+
+[node name="Generator5" parent="Generators" instance=ExtResource("10_choun")]
+position = Vector2(-85, 531)
+
+[node name="Generator2" parent="Generators" instance=ExtResource("10_choun")]
+position = Vector2(-250, 773)
