@@ -9,7 +9,7 @@
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8ln24"]
 texture = ExtResource("3_wu84c")
 
-[node name="Main Menu2" type="Control" node_paths=PackedStringArray("play_button", "settings_button", "exit_button")]
+[node name="Main Menu" type="Control" node_paths=PackedStringArray("play_button", "settings_button", "exit_button")]
 texture_filter = 1
 layout_mode = 3
 anchors_preset = 15
@@ -124,3 +124,4 @@ offset_bottom = -188.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_8ln24")
+bus = &"SFX"
