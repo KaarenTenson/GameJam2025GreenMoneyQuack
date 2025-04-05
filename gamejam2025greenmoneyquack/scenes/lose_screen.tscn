@@ -8,7 +8,11 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6e1uj"]
 bg_color = Color(0.159047, 0.0974606, 0.00854953, 1)
 
+<<<<<<< HEAD
 [node name="Main Menu" type="Control"]
+=======
+[node name="Main Menu2" type="Control"]
+>>>>>>> 4bfc19df1c6c6f51fac8994ec67c3a1104bb4fff
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
