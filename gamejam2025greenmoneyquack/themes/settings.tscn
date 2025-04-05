@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bl80k718t2rmq"]
+[gd_scene load_steps=0 format=3 uid="uid://bl80k718t2rmq"]
 
 [node name="settings" type="VBoxContainer"]
 anchors_preset = -1
