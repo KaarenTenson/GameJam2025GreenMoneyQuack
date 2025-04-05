@@ -1,5 +1,10 @@
-extends Node2D
+extends Area2D
 class_name JamHitBox
 
 @export var health: JamHealth
-var type = get_parent().pizza
+
+func hit(pizza: Pizza):
+	if health:
+		health.hit(pizza)
+	
+	pizza.queue_free()

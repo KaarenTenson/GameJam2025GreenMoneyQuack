@@ -13,6 +13,6 @@ func _process(delta: float) -> void:
 	if direction != null:
 		position += direction.normalized() * speed * delta
 		print(position)
+
 func _ready() -> void:
 	set_new_position(Vector2(1200,0))
-	

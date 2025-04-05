@@ -4,4 +4,4 @@ class_name Jammer
 @export var pizza := global.pizza.MEAT
 
 func die():
-	pass
+	queue_free()
