@@ -6,7 +6,7 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6e1uj"]
 bg_color = Color(0.159047, 0.0974606, 0.00854953, 1)
 
-[node name="Main Menu" type="Control"]
+[node name="tutorial" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
