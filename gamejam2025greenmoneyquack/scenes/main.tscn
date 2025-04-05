@@ -39,6 +39,15 @@ offset_bottom = 23.0
 theme_override_font_sizes/font_size = 111
 text = "Depth of debt: "
 
+[node name="Label2" type="Label" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 187.0
+offset_right = 50.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 136
+text = "Health: "
+
 [node name="Jammijad" type="Node" parent="."]
 
 [node name="Jammer2" parent="Jammijad" instance=ExtResource("3_sugp2")]
