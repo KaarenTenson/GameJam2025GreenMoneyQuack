@@ -1,7 +1,7 @@
 extends Node2D
 
-@export var move_speed:int = 50
-@export var accseleration:int = 5
+@export var move_speed:float = 50
+@export var accseleration:float = 5
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
