@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bnjtaybgkinjr"]
 
 [ext_resource type="Script" uid="uid://dmjsc0qan38mw" path="res://scripts/wall.gd" id="2_2ktk7"]
-[ext_resource type="Texture2D" uid="uid://jxilf477tybe" path="res://icon.svg" id="2_iuee5"]
+[ext_resource type="Texture2D" uid="uid://cjbxkdjdigkl6" path="res://art/ChatGPT Image Apr 5, 2025, 09_43_29 PM.png" id="2_e00m8"]
 [ext_resource type="Script" uid="uid://d004wgalx6dj4" path="res://scripts/wall_area.gd" id="3_e00m8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xduj2"]
@@ -18,7 +18,8 @@ visible = false
 shape = SubResource("RectangleShape2D_xduj2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_iuee5")
+scale = Vector2(0.13, 0.13)
+texture = ExtResource("2_e00m8")
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 4

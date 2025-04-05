@@ -2,7 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://b232ofo6yrhpi" path="res://scripts/main_menu_script.gd" id="2_0wfyh"]
-[ext_resource type="PackedScene" uid="uid://cubr7cfq7r0df" path="res://scenes/settings.tscn" id="3_bqqt6"]
+[ext_resource type="PackedScene" uid="uid://bieh1fbcw4e2i" path="res://scenes/settings.tscn" id="3_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://b4o7pq8e33cr4" path="res://art/menu_back_ground.png" id="3_wu84c"]
 [ext_resource type="AudioStream" uid="uid://l2u2ra5mk0q6" path="res://audio/button/ciapaqua__confirm_sound.mp3" id="5_8ln24"]
 [ext_resource type="AudioStream" uid="uid://btxdd4muarv5o" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-10-14.ogg" id="6_rtw2f"]
