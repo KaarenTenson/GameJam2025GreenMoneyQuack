@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://mqu2q71lm7hr"]
 
 [ext_resource type="Script" uid="uid://bewqeg3cwf336" path="res://scripts/pizza/pizza.gd" id="1_7q0oi"]
-[ext_resource type="Texture2D" uid="uid://jxilf477tybe" path="res://icon.svg" id="2_xpi5f"]
+[ext_resource type="Texture2D" uid="uid://bpvngng3l7fh6" path="res://art/ChatGPT Image Apr 5, 2025, 10_34_22 PM.png" id="2_pr8rg"]
 [ext_resource type="Script" uid="uid://b1j8pr3qpfuv5" path="res://scripts/pizza/pizza_hit_box.gd" id="3_pr8rg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pr8rg"]
@@ -13,7 +13,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_xpi5f")
+"texture": ExtResource("2_pr8rg")
 }],
 "loop": true,
 "name": &"new_animation",
@@ -27,6 +27,7 @@ size = Vector2(124, 121)
 script = ExtResource("1_7q0oi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.13, 0.13)
 sprite_frames = SubResource("SpriteFrames_pr8rg")
 animation = &"new_animation"
 
