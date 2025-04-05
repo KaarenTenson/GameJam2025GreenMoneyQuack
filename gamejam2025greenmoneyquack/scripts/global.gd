@@ -18,12 +18,14 @@ enum pizza {
 
 
 func add_debt():
+	pizzacounter = 0
 	debt += 10
 	debtInc.emit()
 	#print(debt)
 	
 func decrease_health():
 	health-=1
+	pizzacounter = 0
 	if (health <= 0):
 		get_tree().change_scene_to_file("res://scenes/lose_screen.tscn")
 	hpDec.emit()
@@ -38,6 +40,6 @@ func count_pizzas():
 		if (health < maxhealth):
 			health+=1
 			hpDec.emit()
-		pizzacounter = 0
+			pizzacounter = 0
 			
 	pizzacounter+=1
