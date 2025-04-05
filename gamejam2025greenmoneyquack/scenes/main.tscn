@@ -7,14 +7,10 @@
 [ext_resource type="PackedScene" uid="uid://dyoo02ktjidrx" path="res://scenes/jammer.tscn" id="3_sugp2"]
 [ext_resource type="Script" uid="uid://eusp3qai6qqp" path="res://scenes/main_ui.gd" id="5_choun"]
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="5_o6xl0"]
-<<<<<<< HEAD
-[ext_resource type="PackedScene" uid="uid://bnjtaybgkinjr" path="res://scenes/wall.tscn" id="5_tbgi4"]
-=======
 [ext_resource type="PackedScene" uid="uid://gc03cjopxer1" path="res://scenes/wall.tscn" id="5_tbgi4"]
->>>>>>> 9dd96f91a2fbe479278d4f40f2848c76f738e9ce
 [ext_resource type="AudioStream" uid="uid://djyxn7mypq4vp" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-12-21.ogg" id="8_tipki"]
 [ext_resource type="PackedScene" path="res://scenes/Finish.tscn" id="9_85g3d"]
-[ext_resource type="PackedScene" path="res://scenes/generator.tscn" id="10_choun"]
+[ext_resource type="PackedScene" uid="uid://5q3gc183gvdw" path="res://scenes/generator.tscn" id="10_choun"]
 [ext_resource type="PackedScene" path="res://scenes/wall_generator.tscn" id="11_ya4ey"]
 
 [node name="Main" type="Node2D"]
