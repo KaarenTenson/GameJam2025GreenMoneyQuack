@@ -8,8 +8,8 @@ var sfx_bus:int= AudioServer.get_bus_index("SFX")
 func _ready() -> void:
 	
 	exit_button.pressed.connect(func(): visible=!visible)
-	sfx_slider.value= 0.5
-	music_slider.value= 0.5
+	sfx_slider.value= AudioServer.get_bus_volume_linear(sfx_bus)
+	music_slider.value= AudioServer.get_bus_volume_linear(music_bus)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
