@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://cubimofwsr4nq" path="res://scenes/jammer_animation.gd" id="15_ep0gd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dml03"]
+size = Vector2(153.842, 43.3689)
 
 [node name="Jammer" type="Node2D"]
 script = ExtResource("1_udmue")
@@ -15,7 +16,7 @@ script = ExtResource("1_udmue")
 script = ExtResource("1_qubyu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.01, 0.01)
+scale = Vector2(0.1, 0.1)
 sprite_frames = ExtResource("3_sjt4p")
 animation = &"Waiting"
 script = ExtResource("15_ep0gd")
@@ -27,8 +28,12 @@ script = ExtResource("3_dml03")
 health = NodePath("../Health")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(-50.2941, -25.41)
+rotation = 0.462383
 shape = SubResource("RectangleShape2D_dml03")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-16.5, 28.5)
+scale = Vector2(9.25, 10.05)
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

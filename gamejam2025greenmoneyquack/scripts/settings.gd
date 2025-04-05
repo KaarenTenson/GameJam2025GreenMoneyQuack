@@ -11,10 +11,6 @@ func _ready() -> void:
 	sfx_slider.value= AudioServer.get_bus_volume_linear(sfx_bus)
 	music_slider.value= AudioServer.get_bus_volume_linear(music_bus)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
 
 func _on_sfx_slider_value_changed(value: float) -> void:
 	AudioServer.set_bus_volume_linear(sfx_bus, value)

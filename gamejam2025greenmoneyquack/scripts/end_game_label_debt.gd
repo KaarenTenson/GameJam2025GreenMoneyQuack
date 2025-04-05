@@ -6,8 +6,3 @@ extends VBoxContainer
 func _ready() -> void:
 	label.text= "SCORE: "+ str(Global.score) + "€"
 	Global.reset()
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
