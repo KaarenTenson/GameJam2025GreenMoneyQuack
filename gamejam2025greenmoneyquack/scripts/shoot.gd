@@ -1,6 +1,7 @@
 extends Node
 
 
+
 func _input(event):
 	if event.is_action_pressed("shoot_meat"):
 		print("shoot_meat")

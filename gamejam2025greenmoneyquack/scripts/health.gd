@@ -6,4 +6,4 @@ class_name JamHealth
 
 func hit(Pizza pizza):
 	if(pizza.type == pizza)
-		
+		pass
