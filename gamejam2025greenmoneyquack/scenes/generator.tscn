@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://5q3gc183gvdw"]
+
+[ext_resource type="Script" uid="uid://c7uy0lt2105nm" path="res://scripts/generator.gd" id="1_5yxne"]
+
+[node name="Generator" type="Node2D"]
+script = ExtResource("1_5yxne")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
