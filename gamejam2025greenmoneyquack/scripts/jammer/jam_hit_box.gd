@@ -5,7 +5,8 @@ class_name JamHitBox
 
 
 func hit(pizza: Pizza):
-	if health:
-		health.hit(pizza)
+	print("Hit")
+	#if health:
+	health.hit(pizza)
 	
 	pizza.destroy()

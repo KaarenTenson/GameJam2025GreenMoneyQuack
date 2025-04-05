@@ -1,14 +1,14 @@
 extends Node2D
 class_name JamHealth
 
-@export var maxHealth := 1
+#@export var maxHealth := 1
 var health
 var type = global.pizza.MEAT
 
 func _ready() -> void:
 	if get_parent():
 		type = get_parent().pizza
-	health = maxHealth
+	health = get_parent().maxHealth
 
 func hit(pizza: Pizza):
 	#print("hit")

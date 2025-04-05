@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bnjtaybgkinjr"]
 
-[ext_resource type="Script" uid="uid://dmjsc0qan38mw" path="res://scripts/wall.gd" id="2_2ktk7"]
+[ext_resource type="Script" uid="uid://d24w67vbdg0pp" path="res://wall.gd" id="1_y4f30"]
 [ext_resource type="Texture2D" uid="uid://jxilf477tybe" path="res://icon.svg" id="2_iuee5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xduj2"]
@@ -20,7 +20,7 @@ texture = ExtResource("2_iuee5")
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_mask = 2
-script = ExtResource("2_2ktk7")
+script = ExtResource("1_y4f30")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0.5, -1)

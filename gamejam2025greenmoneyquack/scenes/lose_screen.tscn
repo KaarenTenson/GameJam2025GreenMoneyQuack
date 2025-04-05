@@ -1,13 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://dqk1xlnupk28k"]
+[gd_scene load_steps=9 format=3 uid="uid://dqk1xlnupk28k"]
 
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="1_73mov"]
 [ext_resource type="Script" uid="uid://b232ofo6yrhpi" path="res://scripts/main_menu_script.gd" id="2_lytqm"]
+[ext_resource type="Texture2D" uid="uid://c8cm1w0g6joke" path="res://art/lose.png" id="3_0wxbn"]
 [ext_resource type="Script" uid="uid://bx12g4ruw6mmk" path="res://scripts/end_game_label_debt.gd" id="3_lytqm"]
-[ext_resource type="PackedScene" uid="uid://bieh1fbcw4e2i" path="res://scenes/settings.tscn" id="3_v2sw8"]
+[ext_resource type="PackedScene" uid="uid://cubr7cfq7r0df" path="res://scenes/settings.tscn" id="3_v2sw8"]
+[ext_resource type="AudioStream" uid="uid://l2u2ra5mk0q6" path="res://audio/button/ciapaqua__confirm_sound.mp3" id="6_0wxbn"]
+[ext_resource type="AudioStream" uid="uid://balkj14shl388" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-12-18.ogg" id="7_jylt6"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jylt6"]
+texture = ExtResource("3_0wxbn")
 
-[node name="Main Menu2" type="Control" node_paths=PackedStringArray("play_button", "settings_button", "exit_button")]
+[node name="Main Menu3" type="Control" node_paths=PackedStringArray("play_button", "settings_button", "exit_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -115,3 +119,11 @@ offset_left = 358.0
 offset_top = 179.0
 offset_right = 358.92
 offset_bottom = 179.4
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_0wxbn")
+bus = &"SFX"
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_jylt6")
+autoplay = true

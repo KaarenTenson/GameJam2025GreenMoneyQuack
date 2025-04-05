@@ -14,7 +14,13 @@ func addsound(node:Node):
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	addsound(get_tree().root)
-	play_button.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/main.tscn"))
 	if(settings_button!= null):
 		settings_button.pressed.connect(func(): settings.visible= !settings.visible)
 	exit_button.pressed.connect(func(): get_tree().quit(0))
+	play_button.pressed.connect(func(): 
+		await get_tree().create_timer(0.25).timeout
+		if(self.name== "Main Menu"): 
+			get_tree().change_scene_to_file("res://scenes/tutorial.tscn") 
+		else:
+			get_tree().change_scene_to_file("res://scenes/main.tscn")
+		)

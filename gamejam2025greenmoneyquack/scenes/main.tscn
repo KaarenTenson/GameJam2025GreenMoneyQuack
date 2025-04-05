@@ -1,14 +1,24 @@
-[gd_scene load_steps=5 format=3 uid="uid://ctbk2e3ixxtnd"]
+[gd_scene load_steps=7 format=3 uid="uid://bhfg0khohm8wl"]
 
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="1_jyhfs"]
-[ext_resource type="PackedScene" uid="uid://d4kd5syfoylgt" path="res://scenes/player.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://bbafsygr8ytwc" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="2_0wfyh"]
+<<<<<<< HEAD
+[ext_resource type="PackedScene" uid="uid://dyoenmy4lm788" path="res://scenes/jammer.tscn" id="3_sugp2"]
+[ext_resource type="PackedScene" path="res://scenes/wall.tscn" id="5_tbgi4"]
+=======
+[ext_resource type="PackedScene" uid="uid://bqsylfp5p0wte" path="res://scenes/BackGround.tscn" id="2_tefeu"]
 [ext_resource type="PackedScene" uid="uid://dyoo02ktjidrx" path="res://scenes/jammer.tscn" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://bnjtaybgkinjr" path="res://scenes/wall.tscn" id="5_tbgi4"]
+>>>>>>> 925b3540cebb1f22809142cfca28149a6210fc87
 
 [node name="Main" type="Node2D"]
 
 [node name="GameManager" type="Node" parent="."]
 script = ExtResource("1_jyhfs")
+
+[node name="Background" parent="." instance=ExtResource("2_tefeu")]
+position = Vector2(8, 1278)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
@@ -52,29 +62,34 @@ text = "Health: "
 
 [node name="Jammer2" parent="Jammijad" instance=ExtResource("3_sugp2")]
 position = Vector2(-680, 474)
-pizza = 1
 
 [node name="Jammer" parent="Jammijad" instance=ExtResource("3_sugp2")]
 position = Vector2(-872, 67)
 
 [node name="Jammer3" parent="Jammijad" instance=ExtResource("3_sugp2")]
 position = Vector2(396, -179)
+maxHealth = 4
 
 [node name="Jammer4" parent="Jammijad" instance=ExtResource("3_sugp2")]
 position = Vector2(508, -506)
 
 [node name="Jammer5" parent="Jammijad" instance=ExtResource("3_sugp2")]
-position = Vector2(-260, -498)
+position = Vector2(-574, -460)
 
 [node name="Jammer6" parent="Jammijad" instance=ExtResource("3_sugp2")]
-position = Vector2(-535, -706)
+position = Vector2(-354, -58)
 
 [node name="Jammer7" parent="Jammijad" instance=ExtResource("3_sugp2")]
-position = Vector2(-366, -262)
+position = Vector2(-573, -227)
 
 [node name="Jammer8" parent="Jammijad" instance=ExtResource("3_sugp2")]
 position = Vector2(350, 640)
 
 [node name="Jammer9" parent="Jammijad" instance=ExtResource("3_sugp2")]
 position = Vector2(-299, 518)
-pizza = 1
+
+[node name="Wall" parent="Jammijad" instance=ExtResource("5_tbgi4")]
+position = Vector2(-214, -192)
+
+[node name="Wall2" parent="Jammijad" instance=ExtResource("5_tbgi4")]
+position = Vector2(-230, -495)

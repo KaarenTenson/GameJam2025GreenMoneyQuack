@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ciotwpa580ylv"
-path="res://.godot/imported/leveli pizza3.png-2790e0c29b03e01fdcf2202629f398e9.ctex"
+uid="uid://dcg5gu2l56we0"
+path="res://.godot/imported/FreeLoopsMetadata.png-751aa2f95635cf41c814af84f020b0a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/leveli pizza3.png"
-dest_files=["res://.godot/imported/leveli pizza3.png-2790e0c29b03e01fdcf2202629f398e9.ctex"]
+source_file="res://audio/music-loop-bundle-download_2024_q4/FreeLoopsMetadata.png"
+dest_files=["res://.godot/imported/FreeLoopsMetadata.png-751aa2f95635cf41c814af84f020b0a4.ctex"]
 
 [params]
 

@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://bqsylfp5p0wte"]
 
-[ext_resource type="Texture2D" uid="uid://d0tj8ah3x6t" path="res://art/leveli pizza1.png" id="1_41xbd"]
-[ext_resource type="Texture2D" uid="uid://cto6o63gfybt3" path="res://art/leveli pizza3.png" id="2_cbdso"]
-[ext_resource type="Texture2D" uid="uid://brgh3uwjr6s4t" path="res://art/leveli pizza2.png" id="3_cbdso"]
+[ext_resource type="Texture2D" uid="uid://c053gylillp0y" path="res://art/leveli pizza1.png" id="1_41xbd"]
+[ext_resource type="Texture2D" uid="uid://ciotwpa580ylv" path="res://art/leveli pizza3.png" id="2_cbdso"]
+[ext_resource type="Texture2D" uid="uid://5yx54u2uogav" path="res://art/leveli pizza2.png" id="3_cbdso"]
 
 [node name="Background" type="Node2D"]
 

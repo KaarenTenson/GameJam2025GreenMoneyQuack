@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://vagmt3eea211"]
+[gd_scene load_steps=8 format=3 uid="uid://vagmt3eea211"]
 
 [ext_resource type="Script" uid="uid://b232ofo6yrhpi" path="res://scripts/main_menu_script.gd" id="1_2l6cc"]
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="1_e41g7"]
 [ext_resource type="Script" uid="uid://bx12g4ruw6mmk" path="res://scripts/end_game_label_debt.gd" id="1_erk2x"]
-[ext_resource type="PackedScene" uid="uid://bieh1fbcw4e2i" path="res://scenes/settings.tscn" id="2_2l6cc"]
+[ext_resource type="PackedScene" uid="uid://cubr7cfq7r0df" path="res://scenes/settings.tscn" id="2_2l6cc"]
+[ext_resource type="AudioStream" uid="uid://l2u2ra5mk0q6" path="res://audio/button/ciapaqua__confirm_sound.mp3" id="5_0lrm4"]
+[ext_resource type="AudioStream" uid="uid://8j8tfel8xniw" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-11-30.ogg" id="6_6s1kg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e41g7"]
 bg_color = Color(0.0637278, 0.280455, 0.201322, 1)
@@ -114,3 +116,10 @@ offset_left = 358.0
 offset_top = 179.0
 offset_right = 358.92
 offset_bottom = 179.4
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_0lrm4")
+
+[node name="Music_Player" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_6s1kg")
+autoplay = true
