@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dyoo02ktjidrx"]
+[gd_scene load_steps=7 format=3 uid="uid://dyoenmy4lm788"]
 
 [ext_resource type="Script" uid="uid://c0n4q3o4ailqn" path="res://scripts/jammer/jam_health.gd" id="1_qubyu"]
 [ext_resource type="Script" uid="uid://ckkfuud82cb7d" path="res://scripts/jammer/jammer.gd" id="1_udmue"]
@@ -21,6 +21,7 @@ animation = &"Waiting"
 script = ExtResource("15_ep0gd")
 
 [node name="HitBox" type="Area2D" parent="." node_paths=PackedStringArray("health")]
+collision_layer = 4
 collision_mask = 2
 script = ExtResource("3_dml03")
 health = NodePath("../Health")
