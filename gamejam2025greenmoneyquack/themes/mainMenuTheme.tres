@@ -12,7 +12,7 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rjmjr"]
-bg_color = Color(0.332445, 0.0355861, 0.0114626, 1)
+bg_color = Color(0.673285, 0.115473, 0.051531, 1)
 border_width_left = 4
 border_width_top = 4
 border_width_right = 4
@@ -44,23 +44,22 @@ corner_radius_bottom_left = 10
 [sub_resource type="SystemFont" id="SystemFont_7nv0y"]
 font_names = PackedStringArray("STIX")
 font_italic = true
+font_weight = 200
+font_stretch = 50
 
-[sub_resource type="SystemFont" id="SystemFont_rjmjr"]
-font_names = PackedStringArray("STIX")
-font_italic = true
-keep_rounding_remainders = false
+[sub_resource type="FontVariation" id="FontVariation_7nv0y"]
 
 [resource]
-default_base_scale = 1.09
-default_font = SubResource("SystemFont_rjmjr")
-Button/colors/font_color = Color(1, 0.796078, 0, 1)
-Button/font_sizes/font_size = 50
+default_base_scale = 0.95
+default_font = SubResource("FontVariation_7nv0y")
+Button/colors/font_color = Color(1, 0.830894, 0.827729, 1)
+Button/font_sizes/font_size = 60
 Button/styles/focus = SubResource("StyleBoxFlat_glsij")
 Button/styles/hover = SubResource("StyleBoxFlat_rjmjr")
 Button/styles/normal = SubResource("StyleBoxFlat_7nv0y")
 Button/styles/pressed = SubResource("StyleBoxFlat_olt2c")
-Label/colors/font_color = Color(1, 0.796078, 0, 1)
-Label/colors/font_shadow_color = Color(0.862745, 0, 0, 1)
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/colors/font_shadow_color = Color(1, 0.397701, 0.329255, 1)
 Label/constants/shadow_offset_x = 2
 Label/constants/shadow_outline_size = 10
 Label/font_sizes/font_size = 50
