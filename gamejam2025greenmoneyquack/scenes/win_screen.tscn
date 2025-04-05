@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://vagmt3eea211"]
+[gd_scene load_steps=6 format=3 uid="uid://bd1q2arflwspn"]
 
 [ext_resource type="Script" uid="uid://b232ofo6yrhpi" path="res://scripts/main_menu_script.gd" id="1_2l6cc"]
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="1_e41g7"]
-[ext_resource type="Script" uid="uid://bx12g4ruw6mmk" path="res://scripts/end_game_label_debt.gd" id="1_erk2x"]
+[ext_resource type="Script" path="res://scripts/end_game_label_debt.gd" id="1_erk2x"]
 [ext_resource type="PackedScene" uid="uid://cubr7cfq7r0df" path="res://scenes/settings.tscn" id="2_2l6cc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e41g7"]
@@ -50,7 +50,7 @@ size_flags_horizontal = 3
 [node name="Title" type="Label" parent="VBoxContainer2/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "YOU HAVE FEED GAMEJAMMERS"
+text = "You have survived the gamejam"
 horizontal_alignment = 1
 vertical_alignment = 1
 
