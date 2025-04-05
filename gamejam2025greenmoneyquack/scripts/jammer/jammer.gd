@@ -2,6 +2,7 @@ extends Node2D
 class_name Jammer
 
 @export var pizza := global.pizza.MEAT
+@export var maxHealth := 1
 
 #@onready var game_manager:GameManager = %GameManager
 
