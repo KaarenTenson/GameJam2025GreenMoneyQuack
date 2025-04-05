@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cp6dl2pd7048r"]
+[gd_scene load_steps=5 format=3 uid="uid://cp6dl2pd7048r"]
 
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="1_4kmhl"]
-[ext_resource type="Script" path="res://scripts/end_game_label_debt.gd" id="3_6yjpi"]
+[ext_resource type="Script" uid="uid://xc4giassmsj3" path="res://tutorial.gd" id="2_ph3nu"]
+[ext_resource type="AudioStream" uid="uid://l2u2ra5mk0q6" path="res://audio/button/ciapaqua__confirm_sound.mp3" id="3_ph3nu"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6e1uj"]
 bg_color = Color(0.159047, 0.0974606, 0.00854953, 1)
@@ -26,14 +27,15 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_6e1uj")
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+[node name="VBoxContainer2" type="VBoxContainer" parent="." node_paths=PackedStringArray("exit_button")]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("3_6yjpi")
+script = ExtResource("2_ph3nu")
+exit_button = NodePath("VBoxContainer/HBoxContainer2/VBoxContainer/Button")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer2"]
 layout_mode = 2
@@ -116,7 +118,7 @@ text = "missed/wrong pizza -1 heart; -10€
 
 [node name="Button" type="Button" parent="VBoxContainer2/VBoxContainer/HBoxContainer2/VBoxContainer"]
 layout_mode = 2
-text = "Back"
+text = "Exit"
 
 [node name="Control2" type="Control" parent="VBoxContainer2/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
@@ -125,3 +127,7 @@ size_flags_horizontal = 3
 [node name="Control" type="Control" parent="VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_ph3nu")
+bus = &"SFX"

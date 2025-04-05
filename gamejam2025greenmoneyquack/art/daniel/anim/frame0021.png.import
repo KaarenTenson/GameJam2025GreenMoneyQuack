@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ciotwpa580ylv"
-path="res://.godot/imported/leveli pizza3.png-2790e0c29b03e01fdcf2202629f398e9.ctex"
+uid="uid://djwn6ni7jpttq"
+path="res://.godot/imported/frame0021.png-b5efc43459eca28e2005a1b531f821ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/leveli pizza3.png"
-dest_files=["res://.godot/imported/leveli pizza3.png-2790e0c29b03e01fdcf2202629f398e9.ctex"]
+source_file="res://art/daniel/anim/frame0021.png"
+dest_files=["res://.godot/imported/frame0021.png-b5efc43459eca28e2005a1b531f821ef.ctex"]
 
 [params]
 
