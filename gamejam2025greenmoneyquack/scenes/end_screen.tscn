@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dym6hwsh3npc6"]
+[gd_scene load_steps=3 format=3 uid="uid://l0bgijt6w7gj"]
 
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="1_6e1uj"]
-[ext_resource type="Script" path="res://scripts/main_menu_script.gd" id="2_jc7ji"]
+[ext_resource type="Script" uid="uid://b232ofo6yrhpi" path="res://scripts/main_menu_script.gd" id="2_jc7ji"]
 
-[node name="Main Menu" type="VBoxContainer" node_paths=PackedStringArray("play_button", "settings_button", "exit_button")]
+[node name="Main Menu" type="VBoxContainer" node_paths=PackedStringArray("play_button", "exit_button")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -14,7 +14,6 @@ size_flags_vertical = 3
 theme = ExtResource("1_6e1uj")
 script = ExtResource("2_jc7ji")
 play_button = NodePath("VBoxContainer/HBoxContainer/VBoxContainer/Play")
-settings_button = NodePath("")
 exit_button = NodePath("VBoxContainer/HBoxContainer/VBoxContainer/Exit")
 
 [node name="Panel" type="Panel" parent="."]

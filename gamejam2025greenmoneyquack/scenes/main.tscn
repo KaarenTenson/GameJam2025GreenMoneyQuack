@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bhfg0khohm8wl"]
+[gd_scene load_steps=5 format=3 uid="uid://ctbk2e3ixxtnd"]
 
-[ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="1_jyhfs"]
+[ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://bbafsygr8ytwc" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="2_0wfyh"]
-[ext_resource type="PackedScene" uid="uid://dyoenmy4lm788" path="res://scenes/jammer.tscn" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://dyoo02ktjidrx" path="res://scenes/jammer.tscn" id="3_sugp2"]
 
 [node name="Main" type="Node2D"]
 

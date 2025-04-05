@@ -4,6 +4,15 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6buu5"]
 bg_color = Color(0.818566, 0.519202, 0.29114, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.872788, 0.558113, 0.389447, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [node name="settings" type="Control" node_paths=PackedStringArray("exit_button")]
 layout_mode = 3
