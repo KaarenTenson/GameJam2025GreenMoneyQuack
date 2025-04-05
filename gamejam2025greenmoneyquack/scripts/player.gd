@@ -1,6 +1,7 @@
 extends Node2D
 
 @export var move_speed:int = 50
+@export var accseleration:int = 5
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -9,5 +10,5 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	#transform
-	move_speed+=delta
+	move_speed+=(delta*accseleration)
 	position+=(Vector2(0, 1) * delta * move_speed)
