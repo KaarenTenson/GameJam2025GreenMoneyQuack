@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dyoo02ktjidrx"]
 
-[ext_resource type="Script" uid="uid://c0n4q3o4ailqn" path="res://scenes/health.gd" id="1_qubyu"]
+[ext_resource type="Script" uid="uid://c0n4q3o4ailqn" path="res://scripts/health.gd" id="1_qubyu"]
 
 [node name="Jammer" type="Node2D"]
 
