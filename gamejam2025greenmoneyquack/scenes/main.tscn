@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://crbrwwxwi6051"]
+[gd_scene load_steps=3 format=3 uid="uid://ctbk2e3ixxtnd"]
 
 [ext_resource type="PackedScene" uid="uid://bbafsygr8ytwc" path="res://scenes/player.tscn" id="1_o5qli"]
+[ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="2_0wfyh"]
 
 [node name="Main" type="Node2D"]
 
@@ -8,3 +9,6 @@
 position = Vector2(2, -474)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_0wfyh")

@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dym6hwsh3npc6"]
+[gd_scene load_steps=3 format=3 uid="uid://dqk1xlnupk28k"]
 
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="1_6e1uj"]
-[ext_resource type="Script" path="res://scripts/main_menu_script.gd" id="2_jc7ji"]
+[ext_resource type="Script" uid="uid://b232ofo6yrhpi" path="res://scripts/main_menu_script.gd" id="2_jc7ji"]
 
 [node name="Main Menu" type="VBoxContainer" node_paths=PackedStringArray("play_button", "settings_button", "exit_button")]
 anchors_preset = 15
