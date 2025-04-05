@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://mqu2q71lm7hr"]
 
-[ext_resource type="Script" path="res://scenes/pizza.gd" id="1_7q0oi"]
+[ext_resource type="Script" uid="uid://bewqeg3cwf336" path="res://scripts/pizza/pizza.gd" id="1_7q0oi"]
 [ext_resource type="Texture2D" uid="uid://jxilf477tybe" path="res://icon.svg" id="2_xpi5f"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pr8rg"]
