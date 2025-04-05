@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b232ofo6yrhpi" path="res://scripts/main_menu_script.gd" id="1_2l6cc"]
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="1_e41g7"]
 [ext_resource type="Script" uid="uid://bx12g4ruw6mmk" path="res://scripts/end_game_label_debt.gd" id="1_erk2x"]
-[ext_resource type="PackedScene" uid="uid://cubr7cfq7r0df" path="res://scenes/settings.tscn" id="2_2l6cc"]
+[ext_resource type="PackedScene" uid="uid://bieh1fbcw4e2i" path="res://scenes/settings.tscn" id="2_2l6cc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e41g7"]
 bg_color = Color(0.0637278, 0.280455, 0.201322, 1)
