@@ -3,7 +3,8 @@ class_name global
 
 var score:int=0
 var debt = 0
-var health = 3
+var maxhealth = 3
+var health = maxhealth
 
 var pizzacounter = 0
 
@@ -34,6 +35,9 @@ func reset():
 	
 func count_pizzas():
 	if pizzacounter > 4:
-		health+=1
-		hpDec.emit()
+		if (health < maxhealth):
+			health+=1
+			hpDec.emit()
+		pizzacounter = 0
+			
 	pizzacounter+=1
