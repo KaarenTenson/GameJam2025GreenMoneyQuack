@@ -1,11 +1,24 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cp2faysunucaq"]
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://cp2faysunucaq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7nv0y"]
+bg_color = Color(0.8, 0.14902, 0.0745098, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="SystemFont" id="SystemFont_7nv0y"]
 font_names = PackedStringArray("Fantasy")
 font_italic = true
 
 [resource]
-Button/font_sizes/font_size = 35
+Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
+Button/font_sizes/font_size = 40
+Button/styles/normal = SubResource("StyleBoxFlat_7nv0y")
 Label/colors/font_color = Color(1, 0.796078, 0, 1)
 Label/colors/font_shadow_color = Color(0.862745, 0, 0, 1)
 Label/constants/shadow_offset_x = 2
