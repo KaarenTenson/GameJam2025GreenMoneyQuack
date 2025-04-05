@@ -121,7 +121,9 @@ offset_bottom = 179.4
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_0lrm4")
+bus = &"SFX"
 
 [node name="Music_Player" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_6s1kg")
 autoplay = true
+bus = &"Music"
