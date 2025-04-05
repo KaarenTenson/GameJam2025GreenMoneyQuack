@@ -5,7 +5,7 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6buu5"]
 bg_color = Color(0.818566, 0.519202, 0.29114, 1)
 
-[node name="settings" type="Control"]
+[node name="settings" type="Control" node_paths=PackedStringArray("exit_button")]
 layout_mode = 3
 anchor_right = 0.649
 anchor_bottom = 0.67
@@ -14,6 +14,7 @@ offset_bottom = 0.399963
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5p8wc")
+exit_button = NodePath("MarginContainer/VBoxContainer/MarginContainer/Button")
 
 [node name="Control" type="Panel" parent="."]
 layout_mode = 2
@@ -42,41 +43,44 @@ text = "Settings
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+[node name="SFX_Container" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SFX_Container"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "SFX:
-"
+text = "SFX:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="HSlider" type="HSlider" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 4
-size_flags_stretch_ratio = 2.0
-
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-text = "Music:
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="HSlider" type="HSlider" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="SFX_Slider" type="HSlider" parent="MarginContainer/VBoxContainer/SFX_Container"]
+layout_direction = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
 size_flags_stretch_ratio = 2.0
+max_value = 1.0
+step = 0.01
+
+[node name="MusicContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MusicContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Music:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Music_Slider" type="HSlider" parent="MarginContainer/VBoxContainer/MusicContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+size_flags_stretch_ratio = 2.0
+max_value = 1.0
+step = 0.01
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -91,3 +95,6 @@ layout_mode = 2
 size_flags_vertical = 3
 text = "EXIT
 "
+
+[connection signal="value_changed" from="MarginContainer/VBoxContainer/SFX_Container/SFX_Slider" to="." method="_on_sfx_slider_value_changed"]
+[connection signal="value_changed" from="MarginContainer/VBoxContainer/MusicContainer/Music_Slider" to="." method="_on_music_slider_value_changed"]
