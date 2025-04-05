@@ -1,10 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://ctbk2e3ixxtnd"]
+[gd_scene load_steps=12 format=3 uid="uid://ctbk2e3ixxtnd"]
 
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://d4kd5syfoylgt" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://bqsylfp5p0wte" path="res://scenes/BackGround.tscn" id="2_tefeu"]
-[ext_resource type="PackedScene" uid="uid://dyoo02ktjidrx" path="res://scenes/jammer.tscn" id="3_sugp2"]
 [ext_resource type="Script" path="res://scenes/main_ui.gd" id="5_choun"]
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="5_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://bnjtaybgkinjr" path="res://scenes/wall.tscn" id="5_tbgi4"]
@@ -81,52 +80,6 @@ size_flags_vertical = 1
 
 [node name="Jammijad" type="Node" parent="."]
 
-[node name="Jammer2" parent="Jammijad" instance=ExtResource("3_sugp2")]
-visible = false
-position = Vector2(-680, 474)
-
-[node name="Jammer" parent="Jammijad" instance=ExtResource("3_sugp2")]
-visible = false
-position = Vector2(-872, 67)
-
-[node name="Jammer3" parent="Jammijad" instance=ExtResource("3_sugp2")]
-visible = false
-position = Vector2(396, -179)
-pizza = 1
-maxHealth = 4
-
-[node name="Jammer4" parent="Jammijad" instance=ExtResource("3_sugp2")]
-visible = false
-position = Vector2(508, -506)
-
-[node name="Jammer5" parent="Jammijad" instance=ExtResource("3_sugp2")]
-visible = false
-position = Vector2(-574, -460)
-
-[node name="Jammer6" parent="Jammijad" instance=ExtResource("3_sugp2")]
-visible = false
-position = Vector2(-354, -58)
-
-[node name="Jammer7" parent="Jammijad" instance=ExtResource("3_sugp2")]
-visible = false
-position = Vector2(-573, -227)
-
-[node name="Jammer8" parent="Jammijad" instance=ExtResource("3_sugp2")]
-visible = false
-position = Vector2(350, 640)
-
-[node name="Jammer9" parent="Jammijad" instance=ExtResource("3_sugp2")]
-visible = false
-position = Vector2(-299, 518)
-
-[node name="Wall" parent="Jammijad" instance=ExtResource("5_tbgi4")]
-visible = false
-position = Vector2(-779, -377)
-
-[node name="Wall2" parent="Jammijad" instance=ExtResource("5_tbgi4")]
-visible = false
-position = Vector2(-230, -495)
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_tipki")
 autoplay = true
@@ -137,31 +90,34 @@ position = Vector2(125, 1195)
 [node name="Generators" type="Node" parent="."]
 
 [node name="Generator" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(-315, 591)
+position = Vector2(-484, 821)
 
 [node name="Generator3" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(-104, 590)
+position = Vector2(-495, 496)
+
+[node name="Generator10" parent="Generators" instance=ExtResource("10_choun")]
+position = Vector2(-159, 738)
 
 [node name="Generator4" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(-305, 399)
+position = Vector2(-492, 169)
 
 [node name="Generator5" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(-112, 414)
+position = Vector2(-194, 186)
 
 [node name="Generator2" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(-317, 777)
+position = Vector2(-446, 1147)
 
 [node name="Generator6" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(-118, 787)
+position = Vector2(-275, 1145)
 
 [node name="Generator7" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(75, 589)
+position = Vector2(1, 589)
 
 [node name="Generator9" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(84, 763)
+position = Vector2(12, 777)
 
 [node name="Generator8" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(78, 414)
+position = Vector2(4, 408)
 
 [node name="WallGenerator" parent="Generators" instance=ExtResource("11_ya4ey")]
 position = Vector2(302, 426)
