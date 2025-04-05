@@ -1,0 +1,63 @@
+[gd_scene load_steps=8 format=3 uid="uid://b2ny4ohvd1raa"]
+
+[ext_resource type="Script" uid="uid://btk1sy0kv4cml" path="res://intro.gd" id="1_s2ta7"]
+[ext_resource type="Texture2D" uid="uid://cgvf57bqw7kx5" path="res://art/comic part 1.webp" id="2_0a7ni"]
+[ext_resource type="Texture2D" uid="uid://3qrv1b8u0vul" path="res://art/comic part 2.webp" id="2_7a8ye"]
+[ext_resource type="AudioStream" uid="uid://btxdd4muarv5o" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-10-14.ogg" id="3_0a7ni"]
+
+[sub_resource type="Animation" id="Animation_ayt76"]
+resource_name = "default"
+length = 8.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0666667, 4, 8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_0a7ni"), ExtResource("2_0a7ni"), ExtResource("2_7a8ye")]
+}
+
+[sub_resource type="Animation" id="Animation_7a8ye"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0a7ni"]
+_data = {
+&"RESET": SubResource("Animation_7a8ye"),
+&"default": SubResource("Animation_ayt76")
+}
+
+[node name="intro" type="TextureRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s2ta7")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_0a7ni")
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_0a7ni")
+autoplay = true
+bus = &"Music"
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

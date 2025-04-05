@@ -20,7 +20,7 @@ func _ready() -> void:
 	play_button.pressed.connect(func(): 
 		await get_tree().create_timer(0.25).timeout
 		if(self.name== "Main Menu"): 
-			get_tree().change_scene_to_file("res://scenes/tutorial.tscn") 
+			get_tree().change_scene_to_file("res://scenes/intro.tscn") 
 		else:
 			get_tree().change_scene_to_file("res://scenes/main.tscn")
 		)
