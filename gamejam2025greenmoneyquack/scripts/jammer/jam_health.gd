@@ -4,6 +4,7 @@ class_name JamHealth
 @export var health := 1
 @export var pizza: int = global.pizza.MEAT
 
-func hit(Pizza pizza):
-	if(pizza.type == pizza)
-		
+func hit():
+	health -= 1
+	if (health == 0):
+		get_parent().die()
