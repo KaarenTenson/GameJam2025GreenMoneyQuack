@@ -112,7 +112,8 @@ theme_override_constants/separation = 30
 
 [node name="Label" type="Label" parent="VBoxContainer2/VBoxContainer/HBoxContainer2/VBoxContainer"]
 layout_mode = 2
-text = "missed/wrong pizza -1 heart; -10€
+text = "missed pizza -10€
+wrong pizza -1 heart
 5 correct pizzas +1  heart
 "
 
