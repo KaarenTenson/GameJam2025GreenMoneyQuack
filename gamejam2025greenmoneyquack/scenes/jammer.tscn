@@ -1,8 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://dyoo02ktjidrx"]
+[gd_scene load_steps=7 format=3 uid="uid://dyoo02ktjidrx"]
 
 [ext_resource type="Script" uid="uid://c0n4q3o4ailqn" path="res://scripts/jammer/jam_health.gd" id="1_qubyu"]
 [ext_resource type="Script" uid="uid://ckkfuud82cb7d" path="res://scripts/jammer/jammer.gd" id="1_udmue"]
 [ext_resource type="Script" uid="uid://cwf5b4qk80dy0" path="res://scripts/jammer/jam_hit_box.gd" id="3_dml03"]
+[ext_resource type="Texture2D" uid="uid://jxilf477tybe" path="res://icon.svg" id="3_ynd6d"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sjt4p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ynd6d")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dml03"]
 
@@ -15,8 +27,10 @@ script = ExtResource("1_udmue")
 script = ExtResource("1_qubyu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_sjt4p")
 
 [node name="HitBox" type="Area2D" parent="."]
+collision_mask = 2
 script = ExtResource("3_dml03")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]

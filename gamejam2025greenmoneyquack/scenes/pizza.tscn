@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://mqu2q71lm7hr"]
+[gd_scene load_steps=6 format=3 uid="uid://mqu2q71lm7hr"]
 
 [ext_resource type="Script" uid="uid://bewqeg3cwf336" path="res://scripts/pizza/pizza.gd" id="1_7q0oi"]
 [ext_resource type="Texture2D" uid="uid://jxilf477tybe" path="res://icon.svg" id="2_xpi5f"]
+[ext_resource type="Script" uid="uid://b1j8pr3qpfuv5" path="res://scripts/pizza/pizza_hit_box.gd" id="3_pr8rg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pr8rg"]
 animations = [{
@@ -20,7 +21,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xpi5f"]
-size = Vector2(161, 49)
+size = Vector2(124, 121)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_7q0oi")
@@ -30,8 +31,12 @@ sprite_frames = SubResource("SpriteFrames_pr8rg")
 animation = &"new_animation"
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+script = ExtResource("3_pr8rg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(106, -51)
+position = Vector2(1, -0.5)
 shape = SubResource("RectangleShape2D_xpi5f")
 debug_color = Color(1, 1, 1, 0.42)
+
+[connection signal="area_entered" from="Area2D" to="Area2D" method="_on_area_entered"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://crbrwwxwi6051"]
+[gd_scene load_steps=4 format=3 uid="uid://crbrwwxwi6051"]
 
 [ext_resource type="PackedScene" uid="uid://bbafsygr8ytwc" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="2_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://dyoo02ktjidrx" path="res://scenes/jammer.tscn" id="3_sugp2"]
 
 [node name="Main" type="Node2D"]
 
@@ -15,3 +16,6 @@ move_speed = 20
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(-11, 152)
+
+[node name="Jammer" parent="." instance=ExtResource("3_sugp2")]
+position = Vector2(-872, 67)
