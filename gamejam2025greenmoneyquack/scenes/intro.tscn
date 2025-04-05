@@ -1,13 +1,16 @@
-[gd_scene load_steps=8 format=3 uid="uid://i4k53i64fop6"]
+[gd_scene load_steps=9 format=3 uid="uid://i4k53i64fop6"]
 
 [ext_resource type="Script" uid="uid://btk1sy0kv4cml" path="res://intro.gd" id="1_i2l1n"]
 [ext_resource type="Texture2D" uid="uid://cgvf57bqw7kx5" path="res://art/comic part 1.webp" id="2_wfs7u"]
 [ext_resource type="Texture2D" uid="uid://3qrv1b8u0vul" path="res://art/comic part 2.webp" id="3_es01l"]
 [ext_resource type="AudioStream" uid="uid://btxdd4muarv5o" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-10-14.ogg" id="4_0naf5"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2l1n"]
+bg_color = Color(0, 0, 0, 1)
+
 [sub_resource type="Animation" id="Animation_ayt76"]
 resource_name = "default"
-length = 12.0
+length = 8.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -15,10 +18,22 @@ tracks/0/path = NodePath(".:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 4, 4.01, 8),
+"times": PackedFloat32Array(0, 3, 3.01, 6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [ExtResource("2_wfs7u"), ExtResource("2_wfs7u"), ExtResource("3_es01l"), ExtResource("3_es01l")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3, 6, 8),
+"transitions": PackedFloat32Array(2, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.921569), Color(1, 1, 1, 0), Color(1, 1, 1, 0.921569), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_7a8ye"]
@@ -35,6 +50,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [null]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0a7ni"]
 _data = {
@@ -42,7 +69,21 @@ _data = {
 &"default": SubResource("Animation_ayt76")
 }
 
-[node name="intro" type="TextureRect"]
+[node name="Panel" type="Panel"]
+z_as_relative = false
+y_sort_enabled = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_i2l1n")
+
+[node name="intro" type="TextureRect" parent="."]
+top_level = true
+z_index = 2
+y_sort_enabled = true
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -50,12 +91,12 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_i2l1n")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="intro"]
 libraries = {
 &"": SubResource("AnimationLibrary_0a7ni")
 }
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="intro"]
 stream = ExtResource("4_0naf5")
 autoplay = true
 bus = &"Music"
