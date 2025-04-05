@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://cp2faysunucaq"]
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://cp2faysunucaq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glsij"]
 bg_color = Color(0.8, 0.14902, 0.0745098, 1)
@@ -47,6 +47,30 @@ font_italic = true
 font_weight = 200
 font_stretch = 50
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rr5xd"]
+bg_color = Color(0.572143, 0, 0.023568, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qx8g6"]
+bg_color = Color(0.239918, 0.32999, 0.119094, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
 [sub_resource type="FontVariation" id="FontVariation_7nv0y"]
 
 [resource]
@@ -64,3 +88,6 @@ Label/constants/shadow_offset_x = 2
 Label/constants/shadow_outline_size = 10
 Label/font_sizes/font_size = 50
 Label/fonts/font = SubResource("SystemFont_7nv0y")
+ProgressBar/colors/font_color = Color(0.94902, 0.94902, 0.94902, 0)
+ProgressBar/styles/background = SubResource("StyleBoxFlat_rr5xd")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_qx8g6")
