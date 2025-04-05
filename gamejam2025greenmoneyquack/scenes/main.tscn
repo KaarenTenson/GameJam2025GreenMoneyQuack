@@ -55,3 +55,24 @@ position = Vector2(-680, 474)
 
 [node name="Jammer" parent="Jammijad" instance=ExtResource("3_sugp2")]
 position = Vector2(-872, 67)
+
+[node name="Jammer3" parent="Jammijad" instance=ExtResource("3_sugp2")]
+position = Vector2(396, -179)
+
+[node name="Jammer4" parent="Jammijad" instance=ExtResource("3_sugp2")]
+position = Vector2(508, -506)
+
+[node name="Jammer5" parent="Jammijad" instance=ExtResource("3_sugp2")]
+position = Vector2(-260, -498)
+
+[node name="Jammer6" parent="Jammijad" instance=ExtResource("3_sugp2")]
+position = Vector2(-535, -706)
+
+[node name="Jammer7" parent="Jammijad" instance=ExtResource("3_sugp2")]
+position = Vector2(-366, -262)
+
+[node name="Jammer8" parent="Jammijad" instance=ExtResource("3_sugp2")]
+position = Vector2(350, 640)
+
+[node name="Jammer9" parent="Jammijad" instance=ExtResource("3_sugp2")]
+position = Vector2(-299, 518)

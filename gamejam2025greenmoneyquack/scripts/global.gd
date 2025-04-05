@@ -20,4 +20,6 @@ func add_debt():
 	
 func decrease_health():
 	health-=1
+	if (health <= 0):
+		get_tree().change_scene_to_file("res://scenes/lose_screen.tscn")
 	hpDec.emit()
