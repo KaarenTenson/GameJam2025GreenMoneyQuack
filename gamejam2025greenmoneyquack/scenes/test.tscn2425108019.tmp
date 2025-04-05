@@ -9,4 +9,3 @@ position = Vector2(64, 29)
 
 [node name="player" parent="." instance=ExtResource("1_errlg")]
 position = Vector2(89, 16)
-accseleration = 200
