@@ -14,6 +14,10 @@ config/name="GameJam2025GreenMoneyQuack"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="res://audio/default_bus_layout.tres"
+
 [autoload]
 
 Global="*res://scripts/global.gd"
