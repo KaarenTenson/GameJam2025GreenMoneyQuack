@@ -14,7 +14,7 @@ enum pizza {
 
 
 func add_debt():
-	debt += 1
+	debt += 10
 	debtInc.emit()
 	#print(debt)
 	
