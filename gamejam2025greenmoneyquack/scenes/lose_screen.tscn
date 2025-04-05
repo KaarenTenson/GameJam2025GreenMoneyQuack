@@ -8,7 +8,7 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6e1uj"]
 bg_color = Color(0.159047, 0.0974606, 0.00854953, 1)
 
-[node name="Main Menu" type="Control" node_paths=PackedStringArray("play_button", "settings_button", "exit_button")]
+[node name="Main Menu2" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -19,9 +19,6 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_73mov")
 script = ExtResource("2_lytqm")
-play_button = NodePath("")
-settings_button = NodePath("")
-exit_button = NodePath("")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
