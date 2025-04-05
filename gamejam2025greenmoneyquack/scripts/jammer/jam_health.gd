@@ -24,4 +24,4 @@ func correct():
 		get_parent().die()
 
 func wrong():
-	pass
+	Global.decrease_health()

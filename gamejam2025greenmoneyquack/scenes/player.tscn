@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bbafsygr8ytwc"]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://bmakbd81bxkcl" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="SpriteFrames" uid="uid://dmqb1lfqumb32" path="res://animations/player.tres" id="3_dqkch"]
 [ext_resource type="Script" uid="uid://dbv7x4ugh0lsc" path="res://scripts/shoot.gd" id="3_qhqgy"]
 [ext_resource type="Script" path="res://scenes/daniel_animation.gd" id="4_qlg0r"]
