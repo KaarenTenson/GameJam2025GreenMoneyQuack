@@ -7,5 +7,10 @@ class_name Jammer
 
 func die():
 	#game_manager.add_debt()
+	print("Jammer Die")
 	queue_free()
 	
+
+
+func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
+	die()
