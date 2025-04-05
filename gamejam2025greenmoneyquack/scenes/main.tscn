@@ -1,12 +1,17 @@
-[gd_scene load_steps=12 format=3 uid="uid://bhfg0khohm8wl"]
+[gd_scene load_steps=13 format=3 uid="uid://ctbk2e3ixxtnd"]
 
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="1_jyhfs"]
-[ext_resource type="PackedScene" uid="uid://bbafsygr8ytwc" path="res://scenes/player.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://d4kd5syfoylgt" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="2_0wfyh"]
-[ext_resource type="PackedScene" path="res://scenes/BackGround.tscn" id="2_tefeu"]
-[ext_resource type="PackedScene" uid="uid://dyoenmy4lm788" path="res://scenes/jammer.tscn" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://bqsylfp5p0wte" path="res://scenes/BackGround.tscn" id="2_tefeu"]
+[ext_resource type="PackedScene" uid="uid://dyoo02ktjidrx" path="res://scenes/jammer.tscn" id="3_sugp2"]
+[ext_resource type="Script" path="res://scenes/main_ui.gd" id="5_choun"]
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="5_o6xl0"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://bnjtaybgkinjr" path="res://scenes/wall.tscn" id="5_tbgi4"]
+=======
+[ext_resource type="PackedScene" uid="uid://gc03cjopxer1" path="res://scenes/wall.tscn" id="5_tbgi4"]
+>>>>>>> 9dd96f91a2fbe479278d4f40f2848c76f738e9ce
 [ext_resource type="AudioStream" uid="uid://djyxn7mypq4vp" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-12-21.ogg" id="8_tipki"]
 [ext_resource type="PackedScene" path="res://scenes/Finish.tscn" id="9_85g3d"]
 [ext_resource type="PackedScene" path="res://scenes/generator.tscn" id="10_choun"]
@@ -35,7 +40,7 @@ position = Vector2(-11, 152)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Control" type="Control" parent="CanvasLayer"]
+[node name="Control" type="Control" parent="CanvasLayer" node_paths=PackedStringArray("healt_bar")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -43,6 +48,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("5_o6xl0")
+script = ExtResource("5_choun")
+healt_bar = NodePath("HBoxContainer/MarginContainer/ProgressBar")
 
 [node name="Label" type="Label" parent="CanvasLayer/Control"]
 layout_mode = 0
@@ -51,14 +58,30 @@ offset_bottom = 23.0
 theme_override_font_sizes/font_size = 111
 text = "Depth of debt: "
 
-[node name="Label2" type="Label" parent="CanvasLayer/Control"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control"]
 layout_mode = 0
-offset_left = 10.0
-offset_top = 187.0
-offset_right = 50.0
-offset_bottom = 373.0
+offset_left = -3.0
+offset_top = 137.0
+offset_right = 933.0
+offset_bottom = 319.0
+
+[node name="Label2" type="Label" parent="CanvasLayer/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+size_flags_stretch_ratio = 0.25
 theme_override_font_sizes/font_size = 136
-text = "Health: "
+text = "Hp: "
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Control/HBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
 
 [node name="Jammijad" type="Node" parent="."]
 
