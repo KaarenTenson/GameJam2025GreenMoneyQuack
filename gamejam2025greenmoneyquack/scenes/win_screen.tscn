@@ -1,14 +1,15 @@
-[gd_scene load_steps=8 format=3 uid="uid://vagmt3eea211"]
+[gd_scene load_steps=9 format=3 uid="uid://vagmt3eea211"]
 
 [ext_resource type="Script" uid="uid://b232ofo6yrhpi" path="res://scripts/main_menu_script.gd" id="1_2l6cc"]
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="1_e41g7"]
 [ext_resource type="Script" uid="uid://bx12g4ruw6mmk" path="res://scripts/end_game_label_debt.gd" id="1_erk2x"]
 [ext_resource type="PackedScene" uid="uid://cubr7cfq7r0df" path="res://scenes/settings.tscn" id="2_2l6cc"]
+[ext_resource type="Texture2D" uid="uid://ct8v05ivjxj0a" path="res://art/win.png" id="3_bqn3h"]
 [ext_resource type="AudioStream" uid="uid://l2u2ra5mk0q6" path="res://audio/button/ciapaqua__confirm_sound.mp3" id="5_0lrm4"]
 [ext_resource type="AudioStream" uid="uid://8j8tfel8xniw" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-11-30.ogg" id="6_6s1kg"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e41g7"]
-bg_color = Color(0.0637278, 0.280455, 0.201322, 1)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6s1kg"]
+texture = ExtResource("3_bqn3h")
 
 [node name="WinScreen" type="Control" node_paths=PackedStringArray("play_button", "settings_button", "exit_button")]
 layout_mode = 3
@@ -30,7 +31,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_e41g7")
+theme_override_styles/panel = SubResource("StyleBoxTexture_6s1kg")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -52,6 +53,7 @@ size_flags_horizontal = 3
 [node name="Title" type="Label" parent="VBoxContainer2/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 80
 text = "You have survived the gamejam"
 horizontal_alignment = 1
 vertical_alignment = 1
