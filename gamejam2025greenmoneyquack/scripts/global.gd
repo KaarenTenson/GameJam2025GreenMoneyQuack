@@ -4,6 +4,9 @@ class_name global
 var score:int=0
 var debt = 0
 var health = 3
+
+var pizzacounter = 0
+
 signal debtInc
 signal hpDec
 
@@ -23,6 +26,13 @@ func decrease_health():
 	if (health <= 0):
 		get_tree().change_scene_to_file("res://scenes/lose_screen.tscn")
 	hpDec.emit()
+	
 func reset():
 	debt=0
 	health=3
+	
+func count_pizzas():
+	if pizzacounter > 4:
+		health+=1
+		hpDec.emit()
+	pizzacounter+=1

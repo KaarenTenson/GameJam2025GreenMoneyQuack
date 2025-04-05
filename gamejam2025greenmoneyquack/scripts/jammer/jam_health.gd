@@ -19,6 +19,7 @@ func hit(pizza: Pizza):
 
 func correct():
 	#print(health)
+	Global.count_pizzas()
 	health -= 1
 	if health < 1:
 		animator.play("Happy")
