@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://clk4xyg2dmc3b"]
 
-[node name="settings" type="VBoxContainer"]
+[node name="settings2" type="VBoxContainer"]
 anchors_preset = -1
 anchor_right = 0.649
 anchor_bottom = 0.67
