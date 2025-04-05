@@ -8,4 +8,4 @@ func hit(pizza: Pizza):
 	if health:
 		health.hit(pizza)
 	
-	pizza.queue_free()
+	pizza.destroy()

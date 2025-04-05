@@ -11,14 +11,14 @@ func _ready() -> void:
 	health = maxHealth
 
 func hit(pizza: Pizza):
-	print("hit")
+	#print("hit")
 	if type == pizza.pizza:
 		correct()
 	else:
 		wrong()
 
 func correct():
-	print(health)
+	#print(health)
 	health -= 1
 	if health < 1:
 		get_parent().die()
