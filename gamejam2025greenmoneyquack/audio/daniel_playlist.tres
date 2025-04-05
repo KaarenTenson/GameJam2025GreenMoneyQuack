@@ -1,0 +1,15 @@
+[gd_resource type="AudioStreamPlaylist" load_steps=6 format=3 uid="uid://b76ennvlo7tji"]
+
+[ext_resource type="AudioStream" uid="uid://dug7blsnj38t4" path="res://audio/Daniel_Lines/Daniel_Lines/äraLiiguta_2.mp3" id="1_k0qxj"]
+[ext_resource type="AudioStream" uid="uid://dja60wll7507j" path="res://audio/Daniel_Lines/Daniel_Lines/jahArusaadav_1.mp3" id="2_yglno"]
+[ext_resource type="AudioStream" uid="uid://bbwmyscabcxut" path="res://audio/Daniel_Lines/Daniel_Lines/järgmiseKorrani_1.mp3" id="3_8ulip"]
+[ext_resource type="AudioStream" uid="uid://baekah43xh27e" path="res://audio/Daniel_Lines/Daniel_Lines/korvpalliTiimi_1.mp3" id="4_t4uxf"]
+[ext_resource type="AudioStream" uid="uid://cxsxt36oo0e1q" path="res://audio/Daniel_Lines/Daniel_Lines/teidOnAinaRohkem_1.mp3" id="5_riufs"]
+
+[resource]
+stream_count = 5
+stream_0 = ExtResource("1_k0qxj")
+stream_1 = ExtResource("2_yglno")
+stream_2 = ExtResource("3_8ulip")
+stream_3 = ExtResource("4_t4uxf")
+stream_4 = ExtResource("5_riufs")
