@@ -4,6 +4,8 @@ class_name Pizza
 var direction: Vector2
 var speed: float = 200.0  # Speed in pixels per second
 
+@export var pizza = global.pizza.MEAT
+
 func set_new_position(fly: Vector2) -> void:
 	direction = (fly - position)
 

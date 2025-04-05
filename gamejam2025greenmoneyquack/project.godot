@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="GameJam2025GreenMoneyQuack"
-run/main_scene="uid://bm01t6p4asu4h"
+run/main_scene="uid://crbrwwxwi6051"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
