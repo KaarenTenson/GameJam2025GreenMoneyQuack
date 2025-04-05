@@ -1,0 +1,19 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://lesvn2ingv2g"]
+
+[resource]
+animations = [{
+"frames": [],
+"loop": false,
+"name": &"Happy",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"Unhappy",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"Waiting",
+"speed": 5.0
+}]
