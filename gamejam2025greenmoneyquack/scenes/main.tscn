@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bhfg0khohm8wl"]
+[gd_scene load_steps=9 format=3 uid="uid://bhfg0khohm8wl"]
 
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://bbafsygr8ytwc" path="res://scenes/player.tscn" id="1_o5qli"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dyoo02ktjidrx" path="res://scenes/jammer.tscn" id="3_sugp2"]
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="5_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://bnjtaybgkinjr" path="res://scenes/wall.tscn" id="5_tbgi4"]
+[ext_resource type="AudioStream" uid="uid://djyxn7mypq4vp" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-12-21.ogg" id="8_tipki"]
 
 [node name="Main" type="Node2D"]
 
@@ -94,4 +95,5 @@ position = Vector2(-779, -377)
 position = Vector2(-230, -495)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_tipki")
 autoplay = true

@@ -23,3 +23,6 @@ func decrease_health():
 	if (health <= 0):
 		get_tree().change_scene_to_file("res://scenes/lose_screen.tscn")
 	hpDec.emit()
+func reset():
+	debt=0
+	health=3
