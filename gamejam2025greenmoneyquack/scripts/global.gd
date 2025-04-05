@@ -30,6 +30,7 @@ func decrease_health():
 func reset():
 	debt=0
 	health=3
+	pizzacounter = 0
 	
 func count_pizzas():
 	if pizzacounter > 4:

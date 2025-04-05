@@ -85,39 +85,57 @@ stream = ExtResource("8_tipki")
 autoplay = true
 
 [node name="finish" parent="." instance=ExtResource("9_85g3d")]
-position = Vector2(125, 1195)
+position = Vector2(1, 3656)
 
 [node name="Generators" type="Node" parent="."]
 
 [node name="Generator" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(-484, 821)
+position = Vector2(788, 1390)
 
 [node name="Generator3" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(-495, 496)
+position = Vector2(-664, 758)
+
+[node name="Generator11" parent="Generators" instance=ExtResource("10_choun")]
+position = Vector2(525, 1810)
+
+[node name="Generator12" parent="Generators" instance=ExtResource("10_choun")]
+position = Vector2(-589, 1395)
+
+[node name="Generator13" parent="Generators" instance=ExtResource("10_choun")]
+position = Vector2(660, 1455)
+
+[node name="Generator14" parent="Generators" instance=ExtResource("10_choun")]
+position = Vector2(742, 1788)
+
+[node name="Generator15" parent="Generators" instance=ExtResource("10_choun")]
+position = Vector2(-812, 1747)
+
+[node name="Generator16" parent="Generators" instance=ExtResource("10_choun")]
+position = Vector2(-642, 2177)
 
 [node name="Generator10" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(-159, 738)
+position = Vector2(-871, 240)
 
 [node name="Generator4" parent="Generators" instance=ExtResource("10_choun")]
 position = Vector2(-492, 169)
 
 [node name="Generator5" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(-194, 186)
+position = Vector2(131, 1047)
 
 [node name="Generator2" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(-446, 1147)
+position = Vector2(-790, 514)
 
 [node name="Generator6" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(-275, 1145)
+position = Vector2(-714, 1627)
 
 [node name="Generator7" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(1, 589)
+position = Vector2(371, 308)
 
 [node name="Generator9" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(12, 777)
+position = Vector2(415, 1089)
 
 [node name="Generator8" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(4, 408)
+position = Vector2(213, 328)
 
 [node name="WallGenerator" parent="Generators" instance=ExtResource("11_ya4ey")]
 position = Vector2(302, 426)

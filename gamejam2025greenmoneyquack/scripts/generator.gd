@@ -25,6 +25,10 @@ func decide():
 		jammer.pizza = global.pizza.VEGAN
 	else: jammer.pizza = global.pizza.MEAT
 	
+	if $"../../player".global_position.x > global_position.x:
+		jammer.apply_scale(Vector2(-1, 1))
+		print(jammer.scale)
+	
 	
 	$"../../Jammijad".add_child(jammer)
 	print("Generated " + str(jammer.pizza))
