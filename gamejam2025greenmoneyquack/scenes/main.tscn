@@ -117,16 +117,28 @@ position = Vector2(125, 1195)
 [node name="Generators" type="Node" parent="."]
 
 [node name="Generator" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(-531, 533)
+position = Vector2(-315, 591)
 
 [node name="Generator3" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(261, 679)
+position = Vector2(-104, 590)
 
 [node name="Generator4" parent="Generators" instance=ExtResource("10_choun")]
 position = Vector2(-305, 399)
 
 [node name="Generator5" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(-85, 531)
+position = Vector2(-112, 414)
 
 [node name="Generator2" parent="Generators" instance=ExtResource("10_choun")]
-position = Vector2(-250, 773)
+position = Vector2(-317, 777)
+
+[node name="Generator6" parent="Generators" instance=ExtResource("10_choun")]
+position = Vector2(-118, 787)
+
+[node name="Generator7" parent="Generators" instance=ExtResource("10_choun")]
+position = Vector2(75, 589)
+
+[node name="Generator9" parent="Generators" instance=ExtResource("10_choun")]
+position = Vector2(84, 763)
+
+[node name="Generator8" parent="Generators" instance=ExtResource("10_choun")]
+position = Vector2(78, 414)

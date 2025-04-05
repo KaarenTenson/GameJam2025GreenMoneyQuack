@@ -8,7 +8,7 @@ var jammer_scene = preload("res://scenes/jammer.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	decide()
+	#decide()
 	pass # Replace with function body.
 
 
@@ -17,10 +17,22 @@ func _process(delta: float) -> void:
 	pass
 
 func decide():
+	var spawned = randf() < spawn_chance
+	if !spawned:
+		return
+	
 	var jammer:Jammer = jammer_scene.instantiate()
 	jammer.global_position = global_position
+	
+	var vegan = randf() < vegan_chance
+	if vegan:
+		jammer.pizza = global.pizza.VEGAN
+	else: jammer.pizza = global.pizza.MEAT
+	
+	
 	$"../../Jammijad".add_child(jammer)
-	print("Spawn ")
+	print("Generated " + str(jammer.pizza))
 
 func _on_visible_on_screen_notifier_2d_screen_entered() -> void:
 	decide()
+	queue_free()
