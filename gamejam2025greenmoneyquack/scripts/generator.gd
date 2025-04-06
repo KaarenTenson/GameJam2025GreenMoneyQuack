@@ -43,7 +43,7 @@ func decide():
 
 	
 	$"../../Jammijad".add_child(jammer)
-	print("Generated " + str(jammer.pizza))
+	#print("Generated " + str(jammer.pizza))
 	queue_free()
 	
 	
