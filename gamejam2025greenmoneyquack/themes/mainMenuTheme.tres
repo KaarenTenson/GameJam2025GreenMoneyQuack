@@ -1,6 +1,7 @@
 [gd_resource type="Theme" load_steps=13 format=3 uid="uid://cp2faysunucaq"]
 
 [ext_resource type="Texture2D" uid="uid://dqei52q4kxlnb" path="res://art/ui/pizza_button_2.png" id="1_rjmjr"]
+[ext_resource type="FontFile" uid="uid://cp73ga0lv573l" path="res://art/ui/font/sauce-tomato/Sauce Tomato.otf" id="2_olt2c"]
 
 [sub_resource type="SystemFont" id="SystemFont_rjmjr"]
 font_names = PackedStringArray("STIX")
@@ -37,35 +38,29 @@ expand_margin_top = 1.0
 expand_margin_right = 1.0
 expand_margin_bottom = 1.0
 
-[sub_resource type="SystemFont" id="SystemFont_7nv0y"]
-font_names = PackedStringArray("STIX")
-font_italic = true
-font_weight = 200
-font_stretch = 50
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rr5xd"]
 bg_color = Color(0.572143, 0, 0.023568, 1)
 border_width_left = 5
 border_width_top = 5
 border_width_right = 5
 border_width_bottom = 5
-border_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
+border_color = Color(0.494118, 0.27451, 0, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qx8g6"]
-bg_color = Color(0.239918, 0.32999, 0.119094, 1)
+bg_color = Color(0.754316, 0.561115, 0.144478, 1)
 border_width_left = 5
 border_width_top = 5
 border_width_right = 5
 border_width_bottom = 5
-border_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
+border_color = Color(0.495363, 0.274091, 4.81308e-08, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
 
 [resource]
 default_base_scale = 0.95
@@ -80,11 +75,11 @@ Button/styles/pressed = SubResource("StyleBoxTexture_rr5xd")
 HSlider/styles/grabber_area = SubResource("StyleBoxFlat_obsi5")
 HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_6qqms")
 Label/colors/font_color = Color(1, 1, 1, 1)
-Label/colors/font_shadow_color = Color(1, 0.397701, 0.329255, 1)
+Label/colors/font_shadow_color = Color(0.739789, 2.00946e-06, 5.77569e-07, 1)
 Label/constants/shadow_offset_x = 2
 Label/constants/shadow_outline_size = 10
 Label/font_sizes/font_size = 50
-Label/fonts/font = SubResource("SystemFont_7nv0y")
+Label/fonts/font = ExtResource("2_olt2c")
 ProgressBar/colors/font_color = Color(0.94902, 0.94902, 0.94902, 0)
 ProgressBar/styles/background = SubResource("StyleBoxFlat_rr5xd")
 ProgressBar/styles/fill = SubResource("StyleBoxFlat_qx8g6")
