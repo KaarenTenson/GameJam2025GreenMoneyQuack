@@ -16,12 +16,13 @@ metadata/_edit_group_ = true
 script = ExtResource("3_qhqgy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.15, 0.15)
 sprite_frames = ExtResource("3_dqkch")
 animation = &"Throw_R"
 script = ExtResource("4_qlg0r")
 
 [node name="Area2D" type="Area2D" parent="."]
+scale = Vector2(1.5, 1.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(-2, -11.5)

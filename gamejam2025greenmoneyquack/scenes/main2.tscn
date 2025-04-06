@@ -134,14 +134,13 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_font_sizes/font_size = 111
-text = "Depth of debt: "
+text = "Debt: "
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control"]
 layout_mode = 0
-offset_left = -3.0
-offset_top = 137.0
-offset_right = 754.0
-offset_bottom = 319.0
+offset_left = 1159.0
+offset_right = 1916.0
+offset_bottom = 310.0
 
 [node name="Label2" type="Label" parent="CanvasLayer/Control/HBoxContainer"]
 layout_mode = 2

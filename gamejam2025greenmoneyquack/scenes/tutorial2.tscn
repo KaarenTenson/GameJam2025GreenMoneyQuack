@@ -112,7 +112,7 @@ move_speed = 0.0
 accseleration = 20.0
 
 [node name="Camera2D" type="Camera2D" parent="player"]
-offset = Vector2(0, 250)
+offset = Vector2(0, 300)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -132,14 +132,13 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_font_sizes/font_size = 100
-text = "Depth of debt: "
+text = "Debt: "
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control"]
 layout_mode = 0
-offset_left = -3.0
-offset_top = 137.0
-offset_right = 627.0
-offset_bottom = 302.0
+offset_left = 1290.0
+offset_right = 1920.0
+offset_bottom = 228.0
 
 [node name="Label2" type="Label" parent="CanvasLayer/Control/HBoxContainer"]
 layout_mode = 2
