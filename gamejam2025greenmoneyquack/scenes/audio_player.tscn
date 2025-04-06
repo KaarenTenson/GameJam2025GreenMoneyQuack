@@ -28,4 +28,4 @@ volume_db = 24.0
 bus = &"SFX"
 playback_type = 1
 script = ExtResource("7_mt4ah")
-streams = Array[AudioStream]([ExtResource("8_8et3v"), ExtResource("9_lpsqn"), ExtResource("10_ddj1p"), ExtResource("11_jjlgm"), ExtResource("12_kbhea")])
+streams = Array[AudioStream]([ExtResource("8_8et3v"), ExtResource("10_ddj1p"), ExtResource("11_jjlgm"), ExtResource("12_kbhea"), ExtResource("9_lpsqn")])
