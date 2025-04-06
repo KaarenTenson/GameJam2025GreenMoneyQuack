@@ -105,7 +105,6 @@ text = "Try Again"
 [node name="Settings" type="Button" parent="VBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Settings"
 
 [node name="Label" type="Label" parent="VBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer/Settings"]
 layout_mode = 0

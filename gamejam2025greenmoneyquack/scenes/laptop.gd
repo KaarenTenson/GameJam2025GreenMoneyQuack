@@ -4,4 +4,4 @@ extends AnimatedSprite2D
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	play("default")
-	#animation_player.play("jammer_sway")
+	animation_player.play("jammer_sway")
