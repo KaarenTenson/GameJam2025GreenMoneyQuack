@@ -39,7 +39,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(2, -474)]
+"values": [Vector2(2, 114)]
 }
 
 [sub_resource type="Animation" id="Animation_trceg"]
@@ -57,31 +57,31 @@ tracks/0/keys = {
 "update": 0,
 "values": [Vector2(1.5, 1.5), Vector2(1.25, 1.25), Vector2(1, 1)]
 }
-tracks/1/type = "value"
+tracks/1/type = "method"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("player:position")
+tracks/1/path = NodePath("player")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 2.03333),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(2, -474), Vector2(2, -474)]
-}
-tracks/2/type = "method"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("player")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
 "times": PackedFloat32Array(2),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
 "method": &"start_shooting"
 }]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("player:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.96667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 198), Vector2(0, 198)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_a8y0u"]
@@ -110,7 +110,7 @@ position = Vector2(-12, 4566)
 texture = ExtResource("5_7obif")
 
 [node name="player" parent="." instance=ExtResource("6_1reov")]
-position = Vector2(2, -474)
+position = Vector2(2, 114)
 move_speed = 0.0
 accseleration = 20.0
 
@@ -290,14 +290,35 @@ position = Vector2(-914, 8184)
 [node name="Generator28" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(-688, 8094)
 
+[node name="Generator37" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-802, 8136)
+
+[node name="Generator39" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-625, 9049)
+
+[node name="Generator40" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-681, 9132)
+
+[node name="Generator41" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-725, 9211)
+
 [node name="Generator29" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(663, 8111)
 
+[node name="Generator38" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(779, 8185)
+
 [node name="Generator30" parent="Generators" instance=ExtResource("16_bfdpt")]
-position = Vector2(-681.555, 9155.9)
+position = Vector2(-864, 9372)
 
 [node name="Generator31" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(-808.555, 9296.9)
+
+[node name="Generator47" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-900, 9204)
+
+[node name="Generator48" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-819, 9123)
 
 [node name="Generator32" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(-924, 9476)
@@ -308,8 +329,23 @@ position = Vector2(889, 9587)
 [node name="Generator34" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(790, 9389)
 
+[node name="Generator46" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(928, 9456)
+
 [node name="Generator35" parent="Generators" instance=ExtResource("16_bfdpt")]
-position = Vector2(630, 9193)
+position = Vector2(626, 9289)
+
+[node name="Generator42" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(693, 9012)
+
+[node name="Generator43" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(659, 9150)
+
+[node name="Generator44" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(848, 9094)
+
+[node name="Generator45" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(888, 9263)
 
 [node name="Generator36" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(849, 8266)
@@ -382,5 +418,5 @@ position = Vector2(-497, 9934)
 [node name="audioPlayers" parent="." instance=ExtResource("12_lhxgd")]
 
 [node name="Aeglustaja" parent="." instance=ExtResource("13_r8a5h")]
-position = Vector2(-5, 8121)
+position = Vector2(0, 8441)
 milleks_aeglustada = 30
