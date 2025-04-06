@@ -1,20 +1,17 @@
 extends AnimatedSprite2D
 class_name JammerAnimator
 
-@onready var paths = [
-	[
-		"res://animations/Mjammers/1.tres",
-		"res://animations/Mjammers/2.tres",
-	],
-	[
-		"res://animations/Vjammers/1.tres",
-		"res://animations/Vjammers/2.tres",
-	],
-][get_parent().pizza]
 
-@onready var path = paths[randi_range(0, len(paths) - 1)]
+var haircut = [
+	"res://animations/hair/H1.tres",
+	"res://animations/hair/H2.tres",
+	"res://animations/hair/H3.tres",
+	"res://animations/hair/H4.tres",
+][randi_range(0, 3)]
 
-@onready var tres: SpriteFrames = load(path)
+var body = "res://animations/body.tres"
+
+
 
 func _ready() -> void:
-	sprite_frames = tres
+	pass

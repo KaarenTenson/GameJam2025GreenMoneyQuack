@@ -12,7 +12,3 @@ func _ready() -> void:
 	Global.hitWall.connect(func (pos): play_track(CLIPS.HIT_WALL))
 	Global.hitFalse.connect(func (pos): play_track(CLIPS.HIT_INCORRECT))
 	Global.missed.connect(func (pos): play_track(CLIPS.MISSED))
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
