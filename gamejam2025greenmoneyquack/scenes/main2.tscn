@@ -3,7 +3,7 @@
 [ext_resource type="AudioStream" uid="uid://djyxn7mypq4vp" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-12-21.ogg" id="1_7oi8n"]
 [ext_resource type="Script" uid="uid://drmv60j3bcis2" path="res://scenes/main_player_animation.gd" id="2_gs8qe"]
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="3_pr66g"]
-[ext_resource type="PackedScene" uid="uid://diqojl8mm1efa" path="res://scenes/BackGround.tscn" id="4_2jfmm"]
+[ext_resource type="PackedScene" uid="uid://bqsylfp5p0wte" path="res://scenes/BackGround.tscn" id="4_2jfmm"]
 [ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="5_7obif"]
 [ext_resource type="PackedScene" uid="uid://d4kd5syfoylgt" path="res://scenes/player.tscn" id="6_1reov"]
 [ext_resource type="Script" uid="uid://croip4k6ga654" path="res://scripts/daniell_sound_effects.gd" id="7_1dis4"]
