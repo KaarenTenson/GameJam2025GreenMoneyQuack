@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b232ofo6yrhpi" path="res://scripts/main_menu_script.gd" id="1_2l6cc"]
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="1_e41g7"]
 [ext_resource type="Script" uid="uid://bx12g4ruw6mmk" path="res://scripts/end_game_label_debt.gd" id="1_erk2x"]
-[ext_resource type="PackedScene" uid="uid://cubr7cfq7r0df" path="res://scenes/settings.tscn" id="2_2l6cc"]
+[ext_resource type="PackedScene" path="res://scenes/settings.tscn" id="2_2l6cc"]
 [ext_resource type="Texture2D" uid="uid://ct8v05ivjxj0a" path="res://art/win.png" id="3_bqn3h"]
 [ext_resource type="AudioStream" uid="uid://l2u2ra5mk0q6" path="res://audio/button/ciapaqua__confirm_sound.mp3" id="5_0lrm4"]
 [ext_resource type="Theme" uid="uid://j26gx7crfk12" path="res://themes/button_label.tres" id="5_qnnn4"]
@@ -108,6 +108,7 @@ text = "
 "
 
 [node name="Label" type="Label" parent="VBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer/Settings"]
+layout_mode = 0
 offset_left = 124.0
 offset_top = 21.0
 offset_right = 416.0
@@ -119,6 +120,7 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="Label" type="Label" parent="VBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer/Exit"]
+layout_mode = 0
 offset_left = 174.0
 offset_top = 17.0
 offset_right = 466.0

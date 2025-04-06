@@ -1,10 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://51ojkouw00fk"]
+[gd_scene load_steps=13 format=3 uid="uid://51ojkouw00fk"]
 
 [ext_resource type="AudioStream" uid="uid://djyxn7mypq4vp" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-12-21.ogg" id="1_syohv"]
 [ext_resource type="Script" uid="uid://dr3ulgwl8pbxb" path="res://scripts/main_sfx_player.gd" id="2_qbjj0"]
 [ext_resource type="AudioStream" uid="uid://ds5qtq31c6f3j" path="res://audio/main_audio_effects/game-eat-sound-83240.wav" id="3_mfaxx"]
+[ext_resource type="AudioStream" uid="uid://b8d004m2h661h" path="res://audio/main_audio_effects/wallhit.mp3" id="4_ffhcf"]
+[ext_resource type="AudioStream" uid="uid://cbokqmi82ijbt" path="res://audio/main_audio_effects/80s-scream.mp3" id="5_fmexy"]
+[ext_resource type="AudioStream" uid="uid://dkctyh4gm1fsj" path="res://audio/main_audio_effects/classic-game-action-negative.mp3" id="6_m7vm7"]
+[ext_resource type="Script" uid="uid://croip4k6ga654" path="res://scripts/daniell_sound_effects.gd" id="7_mt4ah"]
+[ext_resource type="AudioStream" uid="uid://d151xh4lf670i" path="res://audio/Daniel_Lines/Daniel_Lines/äraLiiguta_1.mp3" id="8_8et3v"]
+[ext_resource type="AudioStream" uid="uid://dja60wll7507j" path="res://audio/Daniel_Lines/Daniel_Lines/jahArusaadav_1.mp3" id="9_lpsqn"]
+[ext_resource type="AudioStream" uid="uid://bbwmyscabcxut" path="res://audio/Daniel_Lines/Daniel_Lines/järgmiseKorrani_1.mp3" id="10_ddj1p"]
+[ext_resource type="AudioStream" uid="uid://baekah43xh27e" path="res://audio/Daniel_Lines/Daniel_Lines/korvpalliTiimi_1.mp3" id="11_jjlgm"]
+[ext_resource type="AudioStream" uid="uid://cxsxt36oo0e1q" path="res://audio/Daniel_Lines/Daniel_Lines/teidOnAinaRohkem_1.mp3" id="12_kbhea"]
 
-[node name="AudioPlayer" type="Node2D"]
+[node name="audioPlayers" type="Node"]
 
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("1_syohv")
@@ -12,4 +21,11 @@ autoplay = true
 
 [node name="SFX_Player" type="AudioStreamPlayer" parent="."]
 script = ExtResource("2_qbjj0")
-streams = Array[AudioStream]([ExtResource("3_mfaxx")])
+streams = Array[AudioStream]([ExtResource("3_mfaxx"), ExtResource("4_ffhcf"), ExtResource("5_fmexy"), ExtResource("6_m7vm7")])
+
+[node name="daniellSoundEffects2" type="AudioStreamPlayer" parent="."]
+volume_db = 24.0
+bus = &"SFX"
+playback_type = 1
+script = ExtResource("7_mt4ah")
+streams = Array[AudioStream]([ExtResource("8_8et3v"), ExtResource("9_lpsqn"), ExtResource("10_ddj1p"), ExtResource("11_jjlgm"), ExtResource("12_kbhea")])
