@@ -114,105 +114,6 @@ script = ExtResource("3_pr66g")
 [node name="Background" parent="." instance=ExtResource("4_2jfmm")]
 position = Vector2(0, 1278)
 
-[node name="Wall" parent="Background" instance=ExtResource("18_h28et")]
-position = Vector2(738, 2560)
-
-[node name="Wall2" parent="Background" instance=ExtResource("18_h28et")]
-position = Vector2(610, 2560)
-
-[node name="Wall3" parent="Background" instance=ExtResource("18_h28et")]
-position = Vector2(485, 2559)
-
-[node name="Wall4" parent="Background" instance=ExtResource("18_h28et")]
-position = Vector2(-897, 8655)
-
-[node name="Wall5" parent="Background" instance=ExtResource("18_h28et")]
-position = Vector2(-765, 8656)
-
-[node name="Wall2" parent="Background/Wall5" instance=ExtResource("18_h28et")]
-position = Vector2(135, 0)
-
-[node name="Wall2" parent="Background/Wall5/Wall2" instance=ExtResource("18_h28et")]
-position = Vector2(133, 0)
-
-[node name="Wall6" parent="Background" instance=ExtResource("18_h28et")]
-position = Vector2(765, 8674)
-
-[node name="Wall7" parent="Background" instance=ExtResource("18_h28et")]
-position = Vector2(894, 6501)
-
-[node name="Wall3" parent="Background/Wall7" instance=ExtResource("18_h28et")]
-position = Vector2(-131, -1)
-
-[node name="Wall3" parent="Background/Wall7/Wall3" instance=ExtResource("18_h28et")]
-position = Vector2(-132, 1)
-
-[node name="Wall3" parent="Background/Wall7/Wall3/Wall3" instance=ExtResource("18_h28et")]
-position = Vector2(-132, 0)
-
-[node name="Generator7" parent="Background" instance=ExtResource("16_bfdpt")]
-position = Vector2(-709, 3234)
-
-[node name="Generator7" parent="Background/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(1382, -20)
-
-[node name="Generator7" parent="Background/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(205, 80)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(-1793, 1168)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(204, 59)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(1377, -7)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(197, -103)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(-1785, 1331)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(223, -67)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(1361, -13)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(193.497, 86.5132)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(-1769.5, 1157.49)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(226, -90.0005)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(1351, 17)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(186, 155)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(-219, 927)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(160, 196)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(99, 198)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(-1813, -111)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(115.445, -179.102)
-
-[node name="Generator7" parent="Background/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7/Generator7" instance=ExtResource("16_bfdpt")]
-position = Vector2(127, -141)
-
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(-12, 4566)
@@ -366,34 +267,133 @@ spawn_chance = 1.0
 position = Vector2(696, 2747)
 spawn_chance = 1.0
 
+[node name="Generator11" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-709, 4512)
+
+[node name="Generator17" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(673, 4492)
+
+[node name="Generator18" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(878, 4572)
+
+[node name="Generator19" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-915, 5740)
+
+[node name="Generator20" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-711, 5799)
+
+[node name="Generator21" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(666, 5792)
+
+[node name="Generator22" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(863, 5689)
+
+[node name="Generator23" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-922, 7020)
+
+[node name="Generator24" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-699, 6953)
+
+[node name="Generator25" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(662, 6940)
+
+[node name="Generator26" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(855.497, 7026.51)
+
+[node name="Generator27" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-914, 8184)
+
+[node name="Generator28" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-688, 8094)
+
+[node name="Generator29" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(663, 8111)
+
+[node name="Generator30" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-681.555, 9155.9)
+
+[node name="Generator31" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-808.555, 9296.9)
+
+[node name="Generator32" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-924, 9476)
+
+[node name="Generator33" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(889, 9587)
+
+[node name="Generator34" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(790, 9389)
+
+[node name="Generator35" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(630, 9193)
+
+[node name="Generator36" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(849, 8266)
+
 [node name="Walls" type="Node" parent="."]
 
-[node name="Wall" parent="." instance=ExtResource("18_h28et")]
+[node name="Wall" parent="Walls" instance=ExtResource("18_h28et")]
 position = Vector2(439, 2745)
 
-[node name="Wall2" parent="." instance=ExtResource("18_h28et")]
+[node name="Wall2" parent="Walls" instance=ExtResource("18_h28et")]
 position = Vector2(865, 3838)
 
-[node name="Wall3" parent="." instance=ExtResource("18_h28et")]
+[node name="Wall3" parent="Walls" instance=ExtResource("18_h28et")]
 position = Vector2(893, 9952)
 
-[node name="Wall6" parent="." instance=ExtResource("18_h28et")]
+[node name="Wall6" parent="Walls" instance=ExtResource("18_h28et")]
 position = Vector2(-902, 7752)
 
-[node name="Wall3" parent="Wall6" instance=ExtResource("18_h28et")]
-position = Vector2(133, 0)
+[node name="Wall4" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(-769, 7752)
 
-[node name="Wall3" parent="Wall6/Wall3" instance=ExtResource("18_h28et")]
-position = Vector2(133, 0)
+[node name="Wall5" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(-636, 7752)
 
-[node name="Wall3" parent="Wall6/Wall3/Wall3" instance=ExtResource("18_h28et")]
-position = Vector2(131, 0)
+[node name="Wall7" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(-505, 7752)
 
-[node name="Wall4" parent="." instance=ExtResource("18_h28et")]
+[node name="Wall8" parent="Walls" instance=ExtResource("18_h28et")]
 position = Vector2(632, 9952)
 
-[node name="Wall5" parent="." instance=ExtResource("18_h28et")]
+[node name="Wall9" parent="Walls" instance=ExtResource("18_h28et")]
 position = Vector2(501, 9953)
+
+[node name="Wall10" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(738, 3838)
+
+[node name="Wall11" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(610, 3838)
+
+[node name="Wall12" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(485, 3837)
+
+[node name="Wall13" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(-897, 9933)
+
+[node name="Wall15" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(765, 9952)
+
+[node name="Wall14" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(-765, 9934)
+
+[node name="Wall16" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(894, 7779)
+
+[node name="Wall18" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(631, 7779)
+
+[node name="Wall17" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(-630, 9934)
+
+[node name="Wall19" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(499, 7779)
+
+[node name="Wall20" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(763, 7778)
+
+[node name="Wall21" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(-497, 9934)
 
 [node name="wave fight" parent="." instance=ExtResource("15_63uc6")]
 position = Vector2(13, 7743)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://wtxr53ewwc10"]
 
-[ext_resource type="Script" path="res://scripts/wall_generator.gd" id="1_3yumq"]
+[ext_resource type="Script" uid="uid://cbaupbr64kbe6" path="res://scripts/wall_generator.gd" id="1_3yumq"]
 [ext_resource type="PackedScene" uid="uid://bnjtaybgkinjr" path="res://scenes/wall.tscn" id="2_qferc"]
 
 [node name="WallGenerator" type="Node2D"]
