@@ -105,9 +105,9 @@ text = "Try Again"
 [node name="Settings" type="Button" parent="VBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Settings"
 
 [node name="Label" type="Label" parent="VBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer/Settings"]
+layout_mode = 0
 offset_left = 121.0
 offset_top = 17.0
 offset_right = 413.0
@@ -119,6 +119,7 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="Label" type="Label" parent="VBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer/Exit"]
+layout_mode = 0
 offset_left = 176.0
 offset_top = 23.0
 offset_right = 468.0
