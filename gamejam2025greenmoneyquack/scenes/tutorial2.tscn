@@ -160,6 +160,9 @@ theme_override_constants/margin_bottom = 50
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Control/HBoxContainer/MarginContainer"]
 layout_mode = 2
 size_flags_vertical = 1
+max_value = 3.0
+step = 1.0
+value = 3.0
 
 [node name="Jammijad" type="Node" parent="."]
 
