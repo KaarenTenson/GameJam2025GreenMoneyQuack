@@ -4,6 +4,9 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	healt_bar.max_value= Global.health
 	healt_bar.value= Global.health
-	Global.hpDec.connect(func(): healt_bar.value= Global.health)
+	print("health")
+	print(healt_bar.value)
+	Global.hpDec.connect(func(): 
+		print("value chnaged",Global.health)
+		healt_bar.value= int(Global.health))
