@@ -206,7 +206,7 @@ position = Vector2(-676, 584)
 position = Vector2(-538, 584)
 
 [node name="Wall4" parent="Walls" instance=ExtResource("10_bu7yn")]
-position = Vector2(409, 1456)
+position = Vector2(405, 1677)
 
 [node name="Wall7" parent="Walls" instance=ExtResource("10_bu7yn")]
 position = Vector2(528, 1312)
@@ -215,10 +215,10 @@ position = Vector2(528, 1312)
 position = Vector2(661, 1178)
 
 [node name="Wall5" parent="Walls" instance=ExtResource("10_bu7yn")]
-position = Vector2(409, 1580)
+position = Vector2(402, 1560)
 
 [node name="Wall6" parent="Walls" instance=ExtResource("10_bu7yn")]
-position = Vector2(411, 1707)
+position = Vector2(397, 1452)
 
 [node name="AudioPlayer" parent="." instance=ExtResource("11_bu7yn")]
 
