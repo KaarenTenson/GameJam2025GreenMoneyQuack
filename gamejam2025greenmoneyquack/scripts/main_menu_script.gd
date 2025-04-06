@@ -22,5 +22,5 @@ func _ready() -> void:
 		if(self.name== "Main Menu"): 
 			get_tree().change_scene_to_file("res://scenes/intro.tscn") 
 		else:
-			get_tree().change_scene_to_file("res://scenes/main.tscn")
+			get_tree().change_scene_to_file("res://scenes/main2.tscn")
 		)
