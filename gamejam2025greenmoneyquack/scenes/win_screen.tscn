@@ -104,13 +104,26 @@ text = "Try Again"
 [node name="Settings" type="Button" parent="VBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+text = "
+"
+
+[node name="Label" type="Label" parent="VBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer/Settings"]
+offset_left = 124.0
+offset_top = 21.0
+offset_right = 416.0
+offset_bottom = 147.0
 text = "Settings"
 
 [node name="Exit" type="Button" parent="VBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Exit
-"
+
+[node name="Label" type="Label" parent="VBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer/Exit"]
+offset_left = 174.0
+offset_top = 17.0
+offset_right = 466.0
+offset_bottom = 143.0
+text = "EXIT"
 
 [node name="Control2" type="Control" parent="VBoxContainer2/VBoxContainer/HBoxContainer"]
 layout_mode = 2
