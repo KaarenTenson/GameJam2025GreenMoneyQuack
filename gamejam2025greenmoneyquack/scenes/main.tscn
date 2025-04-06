@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://drmv60j3bcis2" path="res://scenes/main_player_animation.gd" id="1_a8y0u"]
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://d4kd5syfoylgt" path="res://scenes/player.tscn" id="1_o5qli"]
-[ext_resource type="Script" path="res://scripts/main_sfx_player.gd" id="2_0ld40"]
+[ext_resource type="Script" uid="uid://dr3ulgwl8pbxb" path="res://scripts/main_sfx_player.gd" id="2_0ld40"]
 [ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://bqsylfp5p0wte" path="res://scenes/BackGround.tscn" id="2_tefeu"]
 [ext_resource type="AudioStream" uid="uid://ds5qtq31c6f3j" path="res://audio/main_audio_effects/game-eat-sound-83240.wav" id="3_gqmmt"]
