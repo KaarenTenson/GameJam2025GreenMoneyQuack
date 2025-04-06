@@ -38,8 +38,13 @@ func decide():
 	#print(jammer.get_child(0).health)
 
 	
+<<<<<<< HEAD
 	
 	print("Generated " + str(jammer.pizza))
+=======
+	$"../../Jammijad".add_child(jammer)
+	#print("Generated " + str(jammer.pizza))
+>>>>>>> d4a54a8df3863c2a883c165ac4e0adaeccd631eb
 	queue_free()
 	
 	
