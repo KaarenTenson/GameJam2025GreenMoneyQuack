@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bnjtaybgkinjr" path="res://scenes/wall.tscn" id="10_bu7yn"]
 [ext_resource type="PackedScene" uid="uid://dyoo02ktjidrx" path="res://scenes/jammer.tscn" id="10_jfwxr"]
 [ext_resource type="PackedScene" uid="uid://cm0w2lnsqitqs" path="res://scenes/audio_player.tscn" id="11_bu7yn"]
-[ext_resource type="PackedScene" path="res://scenes/Finish.tscn" id="11_pno41"]
+[ext_resource type="PackedScene" uid="uid://bp8k5ooj77vph" path="res://scenes/Finish.tscn" id="11_pno41"]
 
 [sub_resource type="Animation" id="Animation_a8y0u"]
 length = 0.001
@@ -88,7 +88,7 @@ _data = {
 &"zoom_in": SubResource("Animation_trceg")
 }
 
-[node name="Main" type="Node2D"]
+[node name="Main2" type="Node2D"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
