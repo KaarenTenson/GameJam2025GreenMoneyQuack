@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://wre6k3fnrk4k"]
+[gd_scene load_steps=16 format=3 uid="uid://bhqcuvk0b47kq"]
 
 [ext_resource type="Script" uid="uid://drmv60j3bcis2" path="res://scenes/main_player_animation.gd" id="1_2g7ew"]
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="2_cdyx8"]
@@ -232,7 +232,7 @@ offset_right = -21.0
 offset_bottom = -232.0
 theme_override_font_sizes/font_size = 50
 text = "These hungry jammers want your pizzas
-Throw them pizzas with leht click"
+Throw them pizzas with left click"
 
 [node name="Label2" type="Label" parent="Labels"]
 offset_left = -892.0
@@ -248,7 +248,7 @@ offset_top = 1000.0
 offset_right = -258.0
 offset_bottom = 1141.0
 theme_override_font_sizes/font_size = 50
-text = "Wegans want vegan pizzas
+text = "Vegans want vegan pizzas
 Right click to throw them"
 
 [node name="Label4" type="Label" parent="Labels"]
