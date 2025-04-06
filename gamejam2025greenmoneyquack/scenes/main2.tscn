@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://kvvnso5wuqht"]
+[gd_scene load_steps=17 format=3 uid="uid://dfplas2udqfy2"]
 
 [ext_resource type="Script" uid="uid://drmv60j3bcis2" path="res://scenes/main_player_animation.gd" id="2_gs8qe"]
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="3_pr66g"]
@@ -465,5 +465,9 @@ position = Vector2(877, 8835)
 [node name="audioPlayers" parent="." instance=ExtResource("12_lhxgd")]
 
 [node name="Aeglustaja" parent="." instance=ExtResource("13_r8a5h")]
-position = Vector2(0, 8441)
+position = Vector2(-3, 8132)
+milleks_aeglustada = 30
+
+[node name="Aeglustaja2" parent="." instance=ExtResource("13_r8a5h")]
+position = Vector2(0, 8643)
 milleks_aeglustada = 30
