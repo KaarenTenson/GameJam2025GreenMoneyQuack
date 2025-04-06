@@ -1,13 +1,86 @@
-[gd_scene load_steps=7 format=3 uid="uid://dyoo02ktjidrx"]
+[gd_scene load_steps=25 format=3 uid="uid://dyoo02ktjidrx"]
 
 [ext_resource type="Script" uid="uid://c0n4q3o4ailqn" path="res://scripts/jammer/jam_health.gd" id="1_qubyu"]
 [ext_resource type="Script" uid="uid://ckkfuud82cb7d" path="res://scripts/jammer/jammer.gd" id="1_udmue"]
 [ext_resource type="Script" uid="uid://cwf5b4qk80dy0" path="res://scripts/jammer/jam_hit_box.gd" id="3_dml03"]
 [ext_resource type="SpriteFrames" uid="uid://dyw84nrofoy6g" path="res://animations/Mjammers/1.tres" id="3_sjt4p"]
+[ext_resource type="Texture2D" uid="uid://bsq6dv6diiuni" path="res://animations/laptopanim-20250406T083206Z-001/laptopanim/frame0000.png" id="6_c1m31"]
+[ext_resource type="Texture2D" uid="uid://quniyqb8idkh" path="res://animations/laptopanim-20250406T083206Z-001/laptopanim/frame0001.png" id="7_hijg3"]
+[ext_resource type="Texture2D" uid="uid://5stsqwcaxfra" path="res://animations/laptopanim-20250406T083206Z-001/laptopanim/frame0002.png" id="8_kvh6u"]
+[ext_resource type="Texture2D" uid="uid://chelgusx75mv5" path="res://animations/laptopanim-20250406T083206Z-001/laptopanim/frame0003.png" id="9_ubre1"]
+[ext_resource type="Texture2D" uid="uid://dy6k4c3a6lyad" path="res://animations/laptopanim-20250406T083206Z-001/laptopanim/frame0004.png" id="10_c5hep"]
+[ext_resource type="Texture2D" uid="uid://dagw4k12ogfw0" path="res://animations/laptopanim-20250406T083206Z-001/laptopanim/frame0005.png" id="11_b6eaf"]
+[ext_resource type="Texture2D" uid="uid://dip08o6ragkke" path="res://animations/laptopanim-20250406T083206Z-001/laptopanim/frame0006.png" id="12_3fv2q"]
+[ext_resource type="Texture2D" uid="uid://be03af0aecvle" path="res://animations/laptopanim-20250406T083206Z-001/laptopanim/frame0007.png" id="13_ep0gd"]
+[ext_resource type="Texture2D" uid="uid://42aln1el5kl5" path="res://animations/laptopanim-20250406T083206Z-001/laptopanim/frame0008.png" id="14_vcj4m"]
+[ext_resource type="Texture2D" uid="uid://cnyoclfic28wg" path="res://animations/laptopanim-20250406T083206Z-001/laptopanim/frame0009.png" id="15_81ff2"]
 [ext_resource type="Script" path="res://scenes/jammer_animation.gd" id="15_ep0gd"]
+[ext_resource type="Texture2D" uid="uid://ssoe51kkn0id" path="res://animations/laptopanim-20250406T083206Z-001/laptopanim/frame0010.png" id="16_kr7u2"]
+[ext_resource type="Texture2D" uid="uid://bu54mosmi3pby" path="res://animations/laptopanim-20250406T083206Z-001/laptopanim/frame0011.png" id="17_lbos5"]
+[ext_resource type="Texture2D" uid="uid://bqg2q0nsmiqtp" path="res://animations/laptopanim-20250406T083206Z-001/laptopanim/frame0012.png" id="18_7t7gg"]
+[ext_resource type="Texture2D" uid="uid://b8vd8w4lou1ec" path="res://animations/laptopanim-20250406T083206Z-001/laptopanim/frame0013.png" id="19_qe7xn"]
+[ext_resource type="Texture2D" uid="uid://b4qynbrdcwj3y" path="res://animations/laptopanim-20250406T083206Z-001/laptopanim/frame0014.png" id="20_ci2mr"]
+[ext_resource type="Texture2D" uid="uid://c5w7l24tugjys" path="res://animations/laptopanim-20250406T083206Z-001/laptopanim/frame0015.png" id="21_obsil"]
+[ext_resource type="Script" uid="uid://daf7tcoapvu82" path="res://scenes/laptop.gd" id="22_hijg3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dml03"]
 size = Vector2(248.316, 125.954)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3pmue"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_c1m31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_hijg3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_kvh6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ubre1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_c5hep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_b6eaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_3fv2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ep0gd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_vcj4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_81ff2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_kr7u2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_lbos5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7t7gg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_qe7xn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ci2mr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_obsil")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Jammer" type="Node2D"]
 script = ExtResource("1_udmue")
@@ -35,5 +108,13 @@ shape = SubResource("RectangleShape2D_dml03")
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 position = Vector2(-16.5, 28.5)
 scale = Vector2(9.25, 10.05)
+
+[node name="Laptop" type="AnimatedSprite2D" parent="."]
+position = Vector2(23, 157)
+scale = Vector2(0.0792481, 0.0792481)
+sprite_frames = SubResource("SpriteFrames_3pmue")
+frame = 15
+frame_progress = 1.0
+script = ExtResource("22_hijg3")
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
