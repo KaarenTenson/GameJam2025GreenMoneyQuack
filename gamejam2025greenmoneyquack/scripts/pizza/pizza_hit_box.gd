@@ -7,7 +7,7 @@ func _on_area_entered(area: Area2D) -> void:
 		area.hit(get_parent())
 	elif area is wall_area:
 		print("wall")
-		Global.add_debt()
+		Global.add_debt(200)
 		get_parent().destroy()
 	else:
 		print("!!!! pizza not hit jammer or wall")

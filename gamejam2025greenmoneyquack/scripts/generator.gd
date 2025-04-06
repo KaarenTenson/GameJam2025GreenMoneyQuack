@@ -33,7 +33,7 @@ func decide():
 	
 	if $"../../player".global_position.x > global_position.x:
 		jammer.apply_scale(Vector2(-1, 1))
-		print(jammer.scale)
+		#print(jammer.scale)
 		
 	var vriable =  elu_valikud[rng.rand_weighted(weights)]
 		
