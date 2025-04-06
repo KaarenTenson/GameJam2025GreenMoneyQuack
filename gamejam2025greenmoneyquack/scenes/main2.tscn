@@ -89,7 +89,7 @@ _data = {
 &"zoom_in": SubResource("Animation_trceg")
 }
 
-[node name="Main" type="Node2D"]
+[node name="Main2" type="Node2D"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

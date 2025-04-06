@@ -33,3 +33,10 @@ func _ready() -> void:
 func change(s : String):
 	for anim in sprites:
 		anim.play(s)
+
+
+func _on_body_animation_finished() -> void:
+	if(sprites[1].animation == "Happy"):
+		get_parent().get_parent().die()
+	else:
+		change("Waiting")
