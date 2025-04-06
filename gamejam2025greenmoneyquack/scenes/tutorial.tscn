@@ -80,8 +80,9 @@ theme_override_constants/separation = 30
 [node name="Label" type="Label" parent="VBoxContainer2/VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 text = "Aim: with cursor
+Pizza with meat: left click
 Vegan pizza: right click
-Pizza with meat: left click"
+"
 
 [node name="Control2" type="Control" parent="VBoxContainer2/VBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -112,6 +113,7 @@ layout_mode = 2
 text = "missed pizza -10€
 wrong pizza -1 heart
 5 correct pizzas +1  heart
+thorwing pizza at the server -200€
 "
 
 [node name="Button" type="Button" parent="VBoxContainer2/VBoxContainer/HBoxContainer2/VBoxContainer"]
