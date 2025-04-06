@@ -238,7 +238,7 @@ offset_top = 330.0
 offset_right = 77.0
 offset_bottom = 471.0
 theme_override_font_sizes/font_size = 50
-text = "Try to throw pizzas at servers and see the depth of dept"
+text = "Try to throw pizzas at servers and see the depth of debt"
 
 [node name="Label3" type="Label" parent="Labels"]
 offset_left = -941.0
