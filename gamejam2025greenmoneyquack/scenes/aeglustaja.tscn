@@ -1,14 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://vdhhhhbygsyj"]
+[gd_scene load_steps=3 format=3 uid="uid://dlya265ukijvi"]
 
-[ext_resource type="Script" path="res://scripts/aeglustaja.gd" id="1_s6fne"]
+[ext_resource type="Script" uid="uid://dp80yvupsejay" path="res://scripts/aeglustaja.gd" id="1_s6fne"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qygeq"]
-size = Vector2(460, 20)
+size = Vector2(460, 117)
 
 [node name="Aeglustaja" type="Area2D"]
 script = ExtResource("1_s6fne")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_qygeq")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
