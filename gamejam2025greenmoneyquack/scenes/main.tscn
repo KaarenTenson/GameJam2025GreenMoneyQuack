@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=3 uid="uid://ctbk2e3ixxtnd"]
 
-[ext_resource type="Script" path="res://scenes/main_player_animation.gd" id="1_a8y0u"]
+[ext_resource type="Script" uid="uid://drmv60j3bcis2" path="res://scenes/main_player_animation.gd" id="1_a8y0u"]
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://d4kd5syfoylgt" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="2_0wfyh"]
@@ -9,11 +9,11 @@
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="5_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://bnjtaybgkinjr" path="res://scenes/wall.tscn" id="5_tbgi4"]
 [ext_resource type="AudioStream" uid="uid://dprqa3x5nssgp" path="res://daniel_playlist.tres" id="6_a8y0u"]
-[ext_resource type="Script" path="res://scripts/daniell_sound_effects.gd" id="6_trceg"]
+[ext_resource type="Script" uid="uid://croip4k6ga654" path="res://scripts/daniell_sound_effects.gd" id="6_trceg"]
 [ext_resource type="AudioStream" uid="uid://djyxn7mypq4vp" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-12-21.ogg" id="8_tipki"]
-[ext_resource type="PackedScene" path="res://scenes/Finish.tscn" id="9_85g3d"]
+[ext_resource type="PackedScene" uid="uid://bp8k5ooj77vph" path="res://scenes/Finish.tscn" id="9_85g3d"]
 [ext_resource type="PackedScene" uid="uid://5q3gc183gvdw" path="res://scenes/generator.tscn" id="10_choun"]
-[ext_resource type="PackedScene" path="res://scenes/wall_generator.tscn" id="11_ya4ey"]
+[ext_resource type="PackedScene" uid="uid://wtxr53ewwc10" path="res://scenes/wall_generator.tscn" id="11_ya4ey"]
 
 [sub_resource type="Animation" id="Animation_a8y0u"]
 length = 0.001

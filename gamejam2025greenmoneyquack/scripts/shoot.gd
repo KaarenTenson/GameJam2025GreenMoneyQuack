@@ -19,6 +19,7 @@ func start_shooting():
 	is_shooting=true
 func shoot(type):
 	if(!is_shooting): return
+	Global.emit_shoot()
 	var mouse_pos = get_global_mouse_position()
 	var pizza:Pizza = pizza_scene.instantiate()
 	get_tree().root.add_child(pizza)
