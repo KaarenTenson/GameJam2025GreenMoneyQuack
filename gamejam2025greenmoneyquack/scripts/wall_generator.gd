@@ -12,7 +12,7 @@ func _ready() -> void:
 
 
 func decide():
-	var spawned = randf() < spawn_chance
+	var spawned = randf() <= spawn_chance
 	if !spawned:
 		return
 	
