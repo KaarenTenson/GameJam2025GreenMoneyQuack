@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://kf3sk22xax1c"]
+
+[ext_resource type="Texture2D" uid="uid://bv3uee64ujvkr" path="res://art/jammers/newhappy/shirt/pplhappy3.png" id="1_f36bb"]
+[ext_resource type="Texture2D" uid="uid://bsq0y7ceiw15s" path="res://art/jammers/newnothappy/shirt/pplnothappy1.png" id="2_dixij"]
+[ext_resource type="Texture2D" uid="uid://dvo7eam6mobnv" path="res://art/jammers/newwaiting/shirt/pplwaiting4.png" id="3_fop64"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_f36bb")
+}],
+"loop": false,
+"name": &"Happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_dixij")
+}],
+"loop": false,
+"name": &"Unhappy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_fop64")
+}],
+"loop": true,
+"name": &"Waiting",
+"speed": 5.0
+}]

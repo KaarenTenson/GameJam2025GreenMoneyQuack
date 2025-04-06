@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://btbm13vpcr478"]
+
+[ext_resource type="Texture2D" uid="uid://7272waeyto8" path="res://art/jammers/newhappy/hair/pplhappy3.png" id="1_7nu24"]
+[ext_resource type="Texture2D" uid="uid://dx6rrtui25e42" path="res://art/jammers/newnothappy/hair/pplnothappy4.png" id="2_aeo2r"]
+[ext_resource type="Texture2D" uid="uid://dtbohvs5ylyri" path="res://art/jammers/newwaiting/hair/pplwaiting2.png" id="3_wwv1y"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7nu24")
+}],
+"loop": false,
+"name": &"Happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_aeo2r")
+}],
+"loop": false,
+"name": &"Unhappy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_wwv1y")
+}],
+"loop": true,
+"name": &"Waiting",
+"speed": 5.0
+}]

@@ -249,7 +249,7 @@ offset_right = -258.0
 offset_bottom = 1141.0
 theme_override_font_sizes/font_size = 50
 text = "Wegans want vegan pizzas
-Left click to throw them"
+Right click to throw them"
 
 [node name="Label4" type="Label" parent="Labels"]
 offset_left = -506.0
