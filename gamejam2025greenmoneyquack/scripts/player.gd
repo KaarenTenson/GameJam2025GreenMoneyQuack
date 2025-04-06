@@ -13,3 +13,5 @@ func _process(delta: float) -> void:
 	#transform
 	move_speed+=(delta*accseleration)
 	position+=(Vector2(0, 1) * delta * move_speed)
+func start_shooting():
+	$shoot.start_shooting()
