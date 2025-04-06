@@ -154,8 +154,8 @@ text = "Hp: "
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_bottom = 50
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_bottom = 100
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Control/HBoxContainer/MarginContainer"]
 layout_mode = 2
@@ -164,7 +164,7 @@ size_flags_vertical = 1
 [node name="Jammijad" type="Node" parent="."]
 
 [node name="finish" parent="." instance=ExtResource("15_63uc6")]
-position = Vector2(26, 11948)
+position = Vector2(34, 11089)
 
 [node name="Generators" type="Node" parent="."]
 

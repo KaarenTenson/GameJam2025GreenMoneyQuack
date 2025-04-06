@@ -11,6 +11,7 @@ var PlayerX=0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	decide()
+	queue_free()
 
 
 func decide():
@@ -19,7 +20,6 @@ func decide():
 		return
 	
 	var jammer:Jammer = jammer_scene.instantiate()
-	$"../../Jammijad".add_child(jammer)
 	jammer.global_position = global_position
 	
 	var vegan = randf() < vegan_chance
@@ -27,8 +27,6 @@ func decide():
 		jammer.pizza = global.pizza.VEGAN
 	else: jammer.pizza = global.pizza.MEAT
 	
-	if PlayerX >= jammer.global_position.x:
-		jammer.apply_scale(Vector2(-1, 1))
 		#print(jammer.scale)
 		
 	#var vriable =  elu_valikud[rng.rand_weighted(weights)]
@@ -36,15 +34,11 @@ func decide():
 	jammer.maxHealth = 1
 	#jammer.get_child(0).health = vriable
 	#print(jammer.get_child(0).health)
+	
+	$"../../Jammijad".add_child.call_deferred(jammer)
+	if PlayerX >= global_position.x:
+		self.apply_scale(Vector2(-1, 1))
+		jammer.apply_scale(Vector2(-1, 1))
 
-	
-<<<<<<< HEAD
-	
-	print("Generated " + str(jammer.pizza))
-=======
-	$"../../Jammijad".add_child(jammer)
-	#print("Generated " + str(jammer.pizza))
->>>>>>> d4a54a8df3863c2a883c165ac4e0adaeccd631eb
-	queue_free()
 	
 	
