@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://j26gx7crfk12"]
+
+[ext_resource type="FontFile" uid="uid://cp73ga0lv573l" path="res://art/ui/font/sauce-tomato/Sauce Tomato.otf" id="1_cv33n"]
+
+[resource]
+Label/colors/font_color = Color(0.586397, 0.160863, 0.0748233, 1)
+Label/colors/font_shadow_color = Color(0.552941, 0.321569, 0.0509804, 0.74902)
+Label/font_sizes/font_size = 55
+Label/fonts/font = ExtResource("1_cv33n")

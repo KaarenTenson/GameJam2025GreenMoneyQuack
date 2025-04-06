@@ -9,7 +9,7 @@ var jammer_scene = preload("res://scenes/jammer.tscn")
 var rng = RandomNumberGenerator.new()
 
 var elu_valikud = [1, 2, 3, 4]
-var weights = PackedFloat32Array([4, 2, 1, 0.5])
+var weights = PackedFloat32Array([4, 0, 0 , 0])
 
 
 # Called when the node enters the scene tree for the first time.
