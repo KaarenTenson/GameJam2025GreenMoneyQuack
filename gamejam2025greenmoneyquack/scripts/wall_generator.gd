@@ -20,10 +20,10 @@ func decide():
 	walll.global_position = global_position
 	
 	
-	$"../../Walls".add_child(walll)
+	get_tree().root.add_child.call_deferred(walll)
 	#print("Generated wall")
 	
-	if $"../../player".global_position.x < global_position.x:
+	if 0 < global_position.x:
 		walll.apply_scale(Vector2(-1, 1))
 
 

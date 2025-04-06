@@ -228,9 +228,6 @@ offset_left = -65.0
 offset_top = -408.0
 offset_right = 904.0
 offset_bottom = -267.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 20
 theme_override_font_sizes/font_size = 50
 text = "These hungry jammers want your pizzas
 Throw them pizzas with left click"
@@ -240,20 +237,14 @@ offset_left = -892.0
 offset_top = 330.0
 offset_right = 77.0
 offset_bottom = 471.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 20
 theme_override_font_sizes/font_size = 50
-text = "Try to throw pizzas at servers and see the depth of debt"
+text = "Try to throw pizzas at servers and see the depth of dept"
 
 [node name="Label3" type="Label" parent="Labels"]
 offset_left = -941.0
 offset_top = 1000.0
 offset_right = -258.0
 offset_bottom = 1141.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 20
 theme_override_font_sizes/font_size = 50
 text = "Vegans want vegan pizzas
 Right click to throw them"
@@ -263,9 +254,6 @@ offset_left = -506.0
 offset_top = 1199.0
 offset_right = 831.0
 offset_bottom = 1340.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 20
 theme_override_font_sizes/font_size = 50
 text = "Your Hp will go down when you don't feed a jammer or 
 throw them the wrong kind of pizza"
