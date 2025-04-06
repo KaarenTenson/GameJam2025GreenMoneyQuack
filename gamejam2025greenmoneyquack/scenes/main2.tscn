@@ -1,17 +1,11 @@
-[gd_scene load_steps=22 format=3 uid="uid://dfplas2udqfy2"]
+[gd_scene load_steps=16 format=3 uid="uid://dfplas2udqfy2"]
 
-[ext_resource type="AudioStream" uid="uid://djyxn7mypq4vp" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-12-21.ogg" id="1_7oi8n"]
 [ext_resource type="Script" uid="uid://drmv60j3bcis2" path="res://scenes/main_player_animation.gd" id="2_gs8qe"]
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="3_pr66g"]
 [ext_resource type="PackedScene" uid="uid://bqsylfp5p0wte" path="res://scenes/BackGround.tscn" id="4_2jfmm"]
 [ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="5_7obif"]
 [ext_resource type="PackedScene" uid="uid://d4kd5syfoylgt" path="res://scenes/player.tscn" id="6_1reov"]
-[ext_resource type="Script" uid="uid://croip4k6ga654" path="res://scripts/daniell_sound_effects.gd" id="7_1dis4"]
-[ext_resource type="AudioStream" uid="uid://d151xh4lf670i" path="res://audio/Daniel_Lines/Daniel_Lines/äraLiiguta_1.mp3" id="8_c77lx"]
-[ext_resource type="AudioStream" uid="uid://dja60wll7507j" path="res://audio/Daniel_Lines/Daniel_Lines/jahArusaadav_1.mp3" id="9_b77ej"]
-[ext_resource type="AudioStream" uid="uid://bbwmyscabcxut" path="res://audio/Daniel_Lines/Daniel_Lines/järgmiseKorrani_1.mp3" id="10_ljnj7"]
-[ext_resource type="AudioStream" uid="uid://baekah43xh27e" path="res://audio/Daniel_Lines/Daniel_Lines/korvpalliTiimi_1.mp3" id="11_0wgk2"]
-[ext_resource type="AudioStream" uid="uid://cxsxt36oo0e1q" path="res://audio/Daniel_Lines/Daniel_Lines/teidOnAinaRohkem_1.mp3" id="12_sws6j"]
+[ext_resource type="PackedScene" path="res://scenes/audio_player.tscn" id="12_lhxgd"]
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="13_jhcjm"]
 [ext_resource type="Script" uid="uid://eusp3qai6qqp" path="res://scenes/main_ui.gd" id="14_28w4p"]
 [ext_resource type="PackedScene" path="res://scenes/Finish.tscn" id="15_63uc6"]
@@ -96,12 +90,6 @@ _data = {
 
 [node name="Main" type="Node2D"]
 
-[node name="audioPlayers" type="Node" parent="."]
-
-[node name="MusicPlayer" type="AudioStreamPlayer" parent="audioPlayers"]
-stream = ExtResource("1_7oi8n")
-autoplay = true
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_a8y0u")
@@ -126,13 +114,6 @@ accseleration = 20.0
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(0, 152)
-
-[node name="daniellSoundEffects" type="AudioStreamPlayer" parent="player"]
-volume_db = 24.0
-bus = &"SFX"
-playback_type = 1
-script = ExtResource("7_1dis4")
-streams = Array[AudioStream]([ExtResource("8_c77lx"), ExtResource("9_b77ej"), ExtResource("10_ljnj7"), ExtResource("11_0wgk2"), ExtResource("12_sws6j")])
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -298,7 +279,7 @@ position = Vector2(-699, 6953)
 position = Vector2(662, 6940)
 
 [node name="Generator26" parent="Generators" instance=ExtResource("16_bfdpt")]
-position = Vector2(855.497, 7026.51)
+position = Vector2(805, 7033)
 
 [node name="Generator27" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(-914, 8184)
@@ -397,3 +378,5 @@ position = Vector2(-497, 9934)
 
 [node name="wave fight" parent="." instance=ExtResource("15_63uc6")]
 position = Vector2(13, 7743)
+
+[node name="audioPlayers" parent="." instance=ExtResource("12_lhxgd")]
