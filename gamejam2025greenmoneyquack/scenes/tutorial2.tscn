@@ -179,15 +179,16 @@ position = Vector2(676, 1541)
 pizza = 1
 
 [node name="Aeglustaja" parent="Jammijad" instance=ExtResource("9_jfwxr")]
-position = Vector2(-6, 463)
-milleks_aeglustada = 10
+position = Vector2(17, -185)
+oota_klick = true
 
 [node name="Aeglustaja2" parent="Jammijad" instance=ExtResource("9_jfwxr")]
-position = Vector2(-13, 1110)
+position = Vector2(-21, 1217)
 milleks_aeglustada = 10
+oota_klick = true
 
 [node name="finish" parent="." instance=ExtResource("11_pno41")]
-position = Vector2(1, 3656)
+position = Vector2(-22, 2631)
 path = "res://scenes/tutorial.tscn"
 
 [node name="Generators" type="Node" parent="."]
@@ -223,10 +224,10 @@ position = Vector2(411, 1707)
 [node name="Labels" type="Node" parent="."]
 
 [node name="Label" type="Label" parent="Labels"]
-offset_left = -866.0
-offset_top = -373.0
-offset_right = -21.0
-offset_bottom = -232.0
+offset_left = -65.0
+offset_top = -408.0
+offset_right = 904.0
+offset_bottom = -267.0
 theme_override_font_sizes/font_size = 50
 text = "These hungry jammers want your pizzas
 Throw them pizzas with left click"
