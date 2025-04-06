@@ -6,6 +6,7 @@ var health
 var type = global.pizza.MEAT
 
 func _ready() -> void:
+	
 	if get_parent():
 		type = get_parent().pizza
 	health = get_parent().maxHealth
