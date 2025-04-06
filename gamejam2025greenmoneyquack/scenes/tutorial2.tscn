@@ -161,8 +161,8 @@ theme_override_constants/margin_bottom = 50
 layout_mode = 2
 size_flags_vertical = 1
 max_value = 3.0
-step = 1.0
 value = 3.0
+rounded = true
 
 [node name="Jammijad" type="Node" parent="."]
 
