@@ -1,6 +1,7 @@
 extends Node2D
 
 var pizza_scene = preload("res://scenes/pizza.tscn")
+var vegan_pizza_scene = preload("res://scenes/veganPizza.tscn")
 @onready var animation = $"../AnimatedSprite2D"
 var is_shooting:bool= false
 
@@ -21,7 +22,11 @@ func shoot(type):
 	if(!is_shooting): return
 	Global.emit_shoot()
 	var mouse_pos = get_global_mouse_position()
-	var pizza:Pizza = pizza_scene.instantiate()
+	var pizza:Pizza 
+	if(type == global.pizza.VEGAN):
+		pizza = vegan_pizza_scene.instantiate()
+	else:
+		pizza= pizza_scene.instantiate()
 	get_tree().root.add_child(pizza)
 		
 	pizza.global_position = get_parent().global_position
