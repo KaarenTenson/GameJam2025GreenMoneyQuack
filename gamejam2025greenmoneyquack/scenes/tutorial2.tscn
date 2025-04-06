@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="4_xe87k"]
 [ext_resource type="PackedScene" uid="uid://d4kd5syfoylgt" path="res://scenes/player.tscn" id="5_ypr7c"]
 [ext_resource type="AudioStream" uid="uid://dprqa3x5nssgp" path="res://daniel_playlist.tres" id="6_hnfot"]
-[ext_resource type="Script" path="res://scripts/daniell_sound_effects.gd" id="7_r3455"]
+[ext_resource type="Script" uid="uid://croip4k6ga654" path="res://scripts/daniell_sound_effects.gd" id="7_r3455"]
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="8_1he0l"]
 [ext_resource type="Script" uid="uid://eusp3qai6qqp" path="res://scenes/main_ui.gd" id="9_olai8"]
 [ext_resource type="PackedScene" uid="uid://dyoo02ktjidrx" path="res://scenes/jammer.tscn" id="10_jfwxr"]
