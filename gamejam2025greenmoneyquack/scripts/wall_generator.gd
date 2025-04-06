@@ -7,8 +7,8 @@ var wall_scene = preload("res://scenes/wall.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	#decide()
-	pass # Replace with function body.
+	decide()
+	#pass # Replace with function body.
 
 
 func decide():
@@ -28,6 +28,6 @@ func decide():
 
 
 
-func _on_visible_on_screen_notifier_2d_screen_entered() -> void:
-	decide()
-	queue_free()
+#func _on_visible_on_screen_notifier_2d_screen_entered() -> void:
+	#decide()
+	#queue_free()

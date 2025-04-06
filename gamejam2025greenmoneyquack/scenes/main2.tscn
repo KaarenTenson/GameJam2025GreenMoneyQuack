@@ -213,40 +213,20 @@ position = Vector2(737, 722)
 [node name="Generator8" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(886, 3219)
 
-[node name="WallGenerator" parent="Generators" instance=ExtResource("17_alev3")]
-position = Vector2(590, 998)
+[node name="WallGenerator10" parent="Generators" instance=ExtResource("17_alev3")]
+position = Vector2(-878, 8607)
 spawn_chance = 1.0
 
-[node name="WallGenerator2" parent="Generators" instance=ExtResource("17_alev3")]
-position = Vector2(732, 998)
+[node name="WallGenerator11" parent="Generators" instance=ExtResource("17_alev3")]
+position = Vector2(-876, 8502)
 spawn_chance = 1.0
 
-[node name="WallGenerator3" parent="Generators" instance=ExtResource("17_alev3")]
-position = Vector2(564, 2744)
+[node name="WallGenerator12" parent="Generators" instance=ExtResource("17_alev3")]
+position = Vector2(885, 8685)
 spawn_chance = 1.0
 
-[node name="WallGenerator4" parent="Generators" instance=ExtResource("17_alev3")]
-position = Vector2(858, 993)
-spawn_chance = 1.0
-
-[node name="WallGenerator6" parent="Generators" instance=ExtResource("17_alev3")]
-position = Vector2(-844, 1289)
-spawn_chance = 1.0
-
-[node name="WallGenerator8" parent="Generators" instance=ExtResource("17_alev3")]
-position = Vector2(-578, 1290)
-spawn_chance = 1.0
-
-[node name="WallGenerator9" parent="Generators" instance=ExtResource("17_alev3")]
-position = Vector2(-712, 1290)
-spawn_chance = 1.0
-
-[node name="WallGenerator7" parent="Generators" instance=ExtResource("17_alev3")]
-position = Vector2(824, 2747)
-spawn_chance = 1.0
-
-[node name="WallGenerator5" parent="Generators" instance=ExtResource("17_alev3")]
-position = Vector2(696, 2747)
+[node name="WallGenerator13" parent="Generators" instance=ExtResource("17_alev3")]
+position = Vector2(889, 8573)
 spawn_chance = 1.0
 
 [node name="Generator11" parent="Generators" instance=ExtResource("16_bfdpt")]
@@ -291,6 +271,18 @@ position = Vector2(-688, 8094)
 [node name="Generator37" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(-802, 8136)
 
+[node name="Generator49" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-904, 8006)
+
+[node name="Generator50" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-735, 7953)
+
+[node name="Generator51" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(766, 7991)
+
+[node name="Generator52" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(876, 8071)
+
 [node name="Generator39" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(-625, 9049)
 
@@ -301,7 +293,7 @@ position = Vector2(-681, 9132)
 position = Vector2(-725, 9211)
 
 [node name="Generator29" parent="Generators" instance=ExtResource("16_bfdpt")]
-position = Vector2(663, 8111)
+position = Vector2(682, 8160)
 
 [node name="Generator38" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(779, 8185)
@@ -351,13 +343,52 @@ position = Vector2(849, 8266)
 [node name="Walls" type="Node" parent="."]
 
 [node name="Wall" parent="Walls" instance=ExtResource("18_h28et")]
-position = Vector2(439, 2745)
+position = Vector2(534, 2736)
+
+[node name="Wall24" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(-875, 1819)
+
+[node name="Wall25" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(-752, 1823)
+
+[node name="Wall26" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(-624, 1823)
+
+[node name="Wall27" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(-502, 1819)
+
+[node name="Wall28" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(-382, 1819)
+
+[node name="Wall29" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(430, 1029)
+
+[node name="Wall30" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(549, 1028)
+
+[node name="Wall31" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(681, 1033)
+
+[node name="Wall32" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(807, 1036)
+
+[node name="Wall33" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(921, 1030)
+
+[node name="Wall19" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(652, 2734)
+
+[node name="Wall22" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(774, 2732)
+
+[node name="Wall23" parent="Walls" instance=ExtResource("18_h28et")]
+position = Vector2(895, 2727)
 
 [node name="Wall2" parent="Walls" instance=ExtResource("18_h28et")]
-position = Vector2(865, 3838)
+position = Vector2(484, 3895)
 
 [node name="Wall3" parent="Walls" instance=ExtResource("18_h28et")]
-position = Vector2(893, 9952)
+position = Vector2(555, 9719)
 
 [node name="Wall6" parent="Walls" instance=ExtResource("18_h28et")]
 position = Vector2(-902, 7752)
@@ -372,46 +403,64 @@ position = Vector2(-636, 7752)
 position = Vector2(-505, 7752)
 
 [node name="Wall8" parent="Walls" instance=ExtResource("18_h28et")]
-position = Vector2(632, 9952)
+position = Vector2(680, 9730)
 
 [node name="Wall9" parent="Walls" instance=ExtResource("18_h28et")]
-position = Vector2(501, 9953)
+position = Vector2(802, 9728)
 
 [node name="Wall10" parent="Walls" instance=ExtResource("18_h28et")]
-position = Vector2(738, 3838)
+position = Vector2(617, 3900)
 
 [node name="Wall11" parent="Walls" instance=ExtResource("18_h28et")]
-position = Vector2(610, 3838)
+position = Vector2(748, 3896)
 
 [node name="Wall12" parent="Walls" instance=ExtResource("18_h28et")]
-position = Vector2(485, 3837)
+position = Vector2(882, 3894)
 
 [node name="Wall13" parent="Walls" instance=ExtResource("18_h28et")]
 position = Vector2(-897, 9933)
 
 [node name="Wall15" parent="Walls" instance=ExtResource("18_h28et")]
-position = Vector2(765, 9952)
+position = Vector2(930, 9730)
 
 [node name="Wall14" parent="Walls" instance=ExtResource("18_h28et")]
 position = Vector2(-765, 9934)
 
 [node name="Wall16" parent="Walls" instance=ExtResource("18_h28et")]
-position = Vector2(894, 7779)
+position = Vector2(602, 7773)
 
 [node name="Wall18" parent="Walls" instance=ExtResource("18_h28et")]
-position = Vector2(631, 7779)
+position = Vector2(735, 7780)
 
 [node name="Wall17" parent="Walls" instance=ExtResource("18_h28et")]
 position = Vector2(-630, 9934)
 
-[node name="Wall19" parent="Walls" instance=ExtResource("18_h28et")]
-position = Vector2(499, 7779)
-
 [node name="Wall20" parent="Walls" instance=ExtResource("18_h28et")]
-position = Vector2(763, 7778)
+position = Vector2(868, 7778)
 
 [node name="Wall21" parent="Walls" instance=ExtResource("18_h28et")]
 position = Vector2(-497, 9934)
+
+[node name="WallGenerator" parent="Walls" instance=ExtResource("17_alev3")]
+position = Vector2(-657, 4057)
+
+[node name="WallGenerator2" parent="Walls" instance=ExtResource("17_alev3")]
+position = Vector2(395, 4741)
+
+[node name="WallGenerator3" parent="Walls" instance=ExtResource("17_alev3")]
+position = Vector2(-576, 5221)
+
+[node name="WallGenerator4" parent="Walls" instance=ExtResource("17_alev3")]
+position = Vector2(770, 5260)
+
+[node name="WallGenerator5" parent="Walls" instance=ExtResource("17_alev3")]
+position = Vector2(-688, 6568)
+
+[node name="WallGenerator6" parent="Walls" instance=ExtResource("17_alev3")]
+position = Vector2(-741, 8556)
+
+[node name="WallGenerator7" parent="Walls" instance=ExtResource("17_alev3")]
+position = Vector2(877, 8835)
 
 [node name="audioPlayers" parent="." instance=ExtResource("12_lhxgd")]
 
