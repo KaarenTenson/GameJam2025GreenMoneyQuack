@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://dwguoixauunql"]
 
-[ext_resource type="Script" path="res://intro.gd" id="1_i2l1n"]
+[ext_resource type="Script" uid="uid://btk1sy0kv4cml" path="res://intro.gd" id="1_i2l1n"]
 [ext_resource type="Texture2D" uid="uid://cgvf57bqw7kx5" path="res://art/comic part 1.webp" id="2_wfs7u"]
 [ext_resource type="Texture2D" uid="uid://3qrv1b8u0vul" path="res://art/comic part 2.webp" id="3_es01l"]
 [ext_resource type="AudioStream" uid="uid://btxdd4muarv5o" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-10-14.ogg" id="4_0naf5"]
