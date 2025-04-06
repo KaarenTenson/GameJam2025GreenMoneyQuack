@@ -1,10 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://dfplas2udqfy2"]
+[gd_scene load_steps=18 format=3 uid="uid://kvvnso5wuqht"]
 
 [ext_resource type="Script" uid="uid://drmv60j3bcis2" path="res://scenes/main_player_animation.gd" id="2_gs8qe"]
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="3_pr66g"]
 [ext_resource type="PackedScene" uid="uid://bqsylfp5p0wte" path="res://scenes/BackGround.tscn" id="4_2jfmm"]
 [ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="5_7obif"]
 [ext_resource type="PackedScene" uid="uid://d4kd5syfoylgt" path="res://scenes/player.tscn" id="6_1reov"]
+[ext_resource type="Script" uid="uid://kho17ry7pqyy" path="res://scenes/generators.gd" id="9_pmkxm"]
 [ext_resource type="PackedScene" uid="uid://cm0w2lnsqitqs" path="res://scenes/audio_player.tscn" id="12_lhxgd"]
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="13_jhcjm"]
 [ext_resource type="PackedScene" uid="uid://vdhhhhbygsyj" path="res://scenes/aeglustaja.tscn" id="13_r8a5h"]
@@ -167,6 +168,7 @@ size_flags_vertical = 1
 position = Vector2(26, 11948)
 
 [node name="Generators" type="Node" parent="."]
+script = ExtResource("9_pmkxm")
 
 [node name="Generator" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(788, 1390)

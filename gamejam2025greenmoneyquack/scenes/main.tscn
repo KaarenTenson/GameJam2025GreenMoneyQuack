@@ -89,6 +89,7 @@ _data = {
 }
 
 [node name="Main2" type="Node2D"]
+texture_filter = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
