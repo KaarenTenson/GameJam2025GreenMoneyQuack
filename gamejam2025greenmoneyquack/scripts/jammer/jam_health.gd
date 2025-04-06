@@ -24,7 +24,6 @@ func correct():
 	health -= 1
 	if health < 1:
 		animator.change("Happy")
-		get_parent().die()
 
 func wrong():
 	Global.emit_hitFalse(global_position)
