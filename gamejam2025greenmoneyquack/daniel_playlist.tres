@@ -1,4 +1,4 @@
-[gd_resource type="AudioStreamPlaylist" load_steps=6 format=3 uid="uid://b76ennvlo7tji"]
+[gd_resource type="AudioStreamPlaylist" load_steps=6 format=3 uid="uid://dprqa3x5nssgp"]
 
 [ext_resource type="AudioStream" uid="uid://dug7blsnj38t4" path="res://audio/Daniel_Lines/Daniel_Lines/äraLiiguta_2.mp3" id="1_k0qxj"]
 [ext_resource type="AudioStream" uid="uid://dja60wll7507j" path="res://audio/Daniel_Lines/Daniel_Lines/jahArusaadav_1.mp3" id="2_yglno"]
