@@ -206,7 +206,7 @@ position = Vector2(-676, 584)
 position = Vector2(-538, 584)
 
 [node name="Wall4" parent="Walls" instance=ExtResource("10_bu7yn")]
-position = Vector2(409, 1456)
+position = Vector2(405, 1677)
 
 [node name="Wall7" parent="Walls" instance=ExtResource("10_bu7yn")]
 position = Vector2(528, 1312)
@@ -215,10 +215,10 @@ position = Vector2(528, 1312)
 position = Vector2(661, 1178)
 
 [node name="Wall5" parent="Walls" instance=ExtResource("10_bu7yn")]
-position = Vector2(409, 1580)
+position = Vector2(402, 1560)
 
 [node name="Wall6" parent="Walls" instance=ExtResource("10_bu7yn")]
-position = Vector2(411, 1707)
+position = Vector2(397, 1452)
 
 [node name="AudioPlayer" parent="." instance=ExtResource("11_bu7yn")]
 
@@ -228,6 +228,7 @@ anchors_preset = 0
 theme = ExtResource("13_iw8yh")
 
 [node name="Label" type="Label" parent="Labels"]
+layout_mode = 0
 offset_left = -65.0
 offset_top = -408.0
 offset_right = 904.0
@@ -240,6 +241,7 @@ text = "These hungry jammers want your pizzas
 Throw them pizzas with left click"
 
 [node name="Label2" type="Label" parent="Labels"]
+layout_mode = 0
 offset_left = -892.0
 offset_top = 330.0
 offset_right = 77.0
@@ -248,6 +250,7 @@ theme_override_font_sizes/font_size = 50
 text = "Try to throw pizzas at servers and see the depth of dept"
 
 [node name="Label3" type="Label" parent="Labels"]
+layout_mode = 0
 offset_left = -941.0
 offset_top = 1000.0
 offset_right = -258.0
@@ -257,6 +260,8 @@ text = "Vegans want vegan pizzas
 Right click to throw them"
 
 [node name="Label4" type="Label" parent="Labels"]
+top_level = true
+layout_mode = 0
 offset_left = -506.0
 offset_top = 1199.0
 offset_right = 831.0
