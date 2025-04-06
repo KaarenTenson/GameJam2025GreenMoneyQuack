@@ -183,6 +183,7 @@ position = Vector2(871, 1314)
 
 [node name="Aeglustaja" parent="Jammijad" instance=ExtResource("9_jfwxr")]
 position = Vector2(-6, 463)
+milleks_aeglustada = 10
 
 [node name="Aeglustaja2" parent="Jammijad" instance=ExtResource("9_jfwxr")]
 position = Vector2(-13, 1110)
@@ -190,7 +191,7 @@ milleks_aeglustada = 10
 
 [node name="finish" parent="." instance=ExtResource("11_pno41")]
 position = Vector2(1, 3656)
-path = "res://scenes/main2.tscn"
+path = "res://scenes/tutorial.tscn"
 
 [node name="Generators" type="Node" parent="."]
 
