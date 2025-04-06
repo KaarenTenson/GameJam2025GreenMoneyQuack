@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://bhqcuvk0b47kq"]
 
-[ext_resource type="Script" path="res://scenes/main_player_animation.gd" id="1_2g7ew"]
+[ext_resource type="Script" uid="uid://drmv60j3bcis2" path="res://scenes/main_player_animation.gd" id="1_2g7ew"]
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="2_cdyx8"]
 [ext_resource type="PackedScene" uid="uid://bqsylfp5p0wte" path="res://scenes/BackGround.tscn" id="3_7qesn"]
 [ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="4_xe87k"]
@@ -100,7 +100,7 @@ script = ExtResource("1_2g7ew")
 script = ExtResource("2_cdyx8")
 
 [node name="Background" parent="." instance=ExtResource("3_7qesn")]
-position = Vector2(0, 1278)
+position = Vector2(0, 600)
 
 [node name="Sprite2D" type="Sprite2D" parent="Background"]
 visible = false
@@ -112,7 +112,7 @@ move_speed = 0.0
 accseleration = 20.0
 
 [node name="Camera2D" type="Camera2D" parent="player"]
-position = Vector2(0, 152)
+offset = Vector2(0, 250)
 
 [node name="daniellSoundEffects" type="AudioStreamPlayer" parent="player"]
 stream = ExtResource("6_hnfot")
@@ -169,11 +169,12 @@ size_flags_vertical = 1
 [node name="Jammijad" type="Node" parent="."]
 
 [node name="Jammer" parent="Jammijad" instance=ExtResource("10_jfwxr")]
-position = Vector2(663, 1701)
-rotation = -0.968658
+position = Vector2(723, 1598)
+rotation = -0.751158
+maxHealth = 10
 
 [node name="Jammer2" parent="Jammijad" instance=ExtResource("10_jfwxr")]
-position = Vector2(-676, 1583)
+position = Vector2(-732, 1563)
 rotation = 0.837758
 scale = Vector2(-1, 1)
 pizza = 1
@@ -188,3 +189,5 @@ position = Vector2(1, 3656)
 [node name="Generators" type="Node" parent="."]
 
 [node name="Walls" type="Node" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
