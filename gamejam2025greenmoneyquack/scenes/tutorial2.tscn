@@ -1,16 +1,15 @@
-[gd_scene load_steps=16 format=3 uid="uid://bhqcuvk0b47kq"]
+[gd_scene load_steps=15 format=3 uid="uid://bhqcuvk0b47kq"]
 
 [ext_resource type="Script" uid="uid://drmv60j3bcis2" path="res://scenes/main_player_animation.gd" id="1_2g7ew"]
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="2_cdyx8"]
 [ext_resource type="PackedScene" uid="uid://bqsylfp5p0wte" path="res://scenes/BackGround.tscn" id="3_7qesn"]
 [ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="4_xe87k"]
 [ext_resource type="PackedScene" uid="uid://d4kd5syfoylgt" path="res://scenes/player.tscn" id="5_ypr7c"]
-[ext_resource type="AudioStream" uid="uid://dprqa3x5nssgp" path="res://daniel_playlist.tres" id="6_hnfot"]
 [ext_resource type="Script" uid="uid://croip4k6ga654" path="res://scripts/daniell_sound_effects.gd" id="7_r3455"]
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="8_1he0l"]
 [ext_resource type="Script" uid="uid://eusp3qai6qqp" path="res://scenes/main_ui.gd" id="9_olai8"]
 [ext_resource type="PackedScene" uid="uid://dyoo02ktjidrx" path="res://scenes/jammer.tscn" id="10_jfwxr"]
-[ext_resource type="AudioStream" uid="uid://djyxn7mypq4vp" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-12-21.ogg" id="10_rtkyi"]
+[ext_resource type="PackedScene" uid="uid://51ojkouw00fk" path="res://scenes/audio_player.tscn" id="11_bu7yn"]
 [ext_resource type="PackedScene" path="res://scenes/Finish.tscn" id="11_pno41"]
 
 [sub_resource type="Animation" id="Animation_a8y0u"]
@@ -115,7 +114,6 @@ accseleration = 20.0
 offset = Vector2(0, 250)
 
 [node name="daniellSoundEffects" type="AudioStreamPlayer" parent="player"]
-stream = ExtResource("6_hnfot")
 volume_db = 24.0
 bus = &"SFX"
 script = ExtResource("7_r3455")
@@ -179,10 +177,6 @@ rotation = 0.837758
 scale = Vector2(-1, 1)
 pizza = 1
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("10_rtkyi")
-autoplay = true
-
 [node name="finish" parent="." instance=ExtResource("11_pno41")]
 position = Vector2(1, 3656)
 
@@ -190,4 +184,4 @@ position = Vector2(1, 3656)
 
 [node name="Walls" type="Node" parent="."]
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="AudioPlayer" parent="." instance=ExtResource("11_bu7yn")]

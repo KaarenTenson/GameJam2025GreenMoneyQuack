@@ -1,25 +1,17 @@
-[gd_scene load_steps=24 format=3 uid="uid://ctbk2e3ixxtnd"]
+[gd_scene load_steps=16 format=3 uid="uid://ctbk2e3ixxtnd"]
 
 [ext_resource type="Script" uid="uid://drmv60j3bcis2" path="res://scenes/main_player_animation.gd" id="1_a8y0u"]
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://d4kd5syfoylgt" path="res://scenes/player.tscn" id="1_o5qli"]
-[ext_resource type="Script" path="res://scripts/main_sfx_player.gd" id="2_0ld40"]
 [ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://bqsylfp5p0wte" path="res://scenes/BackGround.tscn" id="2_tefeu"]
-[ext_resource type="AudioStream" uid="uid://ds5qtq31c6f3j" path="res://audio/main_audio_effects/game-eat-sound-83240.wav" id="3_gqmmt"]
 [ext_resource type="Script" uid="uid://eusp3qai6qqp" path="res://scenes/main_ui.gd" id="5_choun"]
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="5_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://bnjtaybgkinjr" path="res://scenes/wall.tscn" id="5_tbgi4"]
-[ext_resource type="Script" uid="uid://croip4k6ga654" path="res://scripts/daniell_sound_effects.gd" id="6_trceg"]
-[ext_resource type="AudioStream" uid="uid://d151xh4lf670i" path="res://audio/Daniel_Lines/Daniel_Lines/äraLiiguta_1.mp3" id="8_dp3eg"]
-[ext_resource type="AudioStream" uid="uid://djyxn7mypq4vp" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-12-21.ogg" id="8_tipki"]
-[ext_resource type="AudioStream" uid="uid://dja60wll7507j" path="res://audio/Daniel_Lines/Daniel_Lines/jahArusaadav_1.mp3" id="9_0ld40"]
 [ext_resource type="PackedScene" path="res://scenes/Finish.tscn" id="9_85g3d"]
 [ext_resource type="PackedScene" uid="uid://5q3gc183gvdw" path="res://scenes/generator.tscn" id="10_choun"]
-[ext_resource type="AudioStream" uid="uid://bbwmyscabcxut" path="res://audio/Daniel_Lines/Daniel_Lines/järgmiseKorrani_1.mp3" id="10_gqmmt"]
-[ext_resource type="PackedScene" path="res://scenes/wall_generator.tscn" id="11_ya4ey"]
-[ext_resource type="AudioStream" uid="uid://baekah43xh27e" path="res://audio/Daniel_Lines/Daniel_Lines/korvpalliTiimi_1.mp3" id="11_yc10j"]
-[ext_resource type="AudioStream" uid="uid://cxsxt36oo0e1q" path="res://audio/Daniel_Lines/Daniel_Lines/teidOnAinaRohkem_1.mp3" id="12_jscy8"]
+[ext_resource type="PackedScene" uid="uid://wtxr53ewwc10" path="res://scenes/wall_generator.tscn" id="11_ya4ey"]
+[ext_resource type="PackedScene" uid="uid://51ojkouw00fk" path="res://scenes/audio_player.tscn" id="12_eb6dy"]
 
 [sub_resource type="Animation" id="Animation_a8y0u"]
 length = 0.001
@@ -98,16 +90,6 @@ _data = {
 
 [node name="Main" type="Node2D"]
 
-[node name="audioPlayers" type="Node" parent="."]
-
-[node name="MusicPlayer" type="AudioStreamPlayer" parent="audioPlayers"]
-stream = ExtResource("8_tipki")
-autoplay = true
-
-[node name="SFX_Player" type="AudioStreamPlayer" parent="audioPlayers"]
-script = ExtResource("2_0ld40")
-streams = Array[AudioStream]([ExtResource("3_gqmmt")])
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_a8y0u")
@@ -132,13 +114,6 @@ accseleration = 20.0
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(0, 152)
-
-[node name="daniellSoundEffects" type="AudioStreamPlayer" parent="player"]
-volume_db = 24.0
-bus = &"SFX"
-playback_type = 1
-script = ExtResource("6_trceg")
-streams = Array[AudioStream]([ExtResource("8_dp3eg"), ExtResource("9_0ld40"), ExtResource("10_gqmmt"), ExtResource("11_yc10j"), ExtResource("12_jscy8")])
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -271,3 +246,5 @@ position = Vector2(497, 596)
 
 [node name="Wall" parent="." instance=ExtResource("5_tbgi4")]
 position = Vector2(-497, -54)
+
+[node name="AudioPlayer" parent="." instance=ExtResource("12_eb6dy")]

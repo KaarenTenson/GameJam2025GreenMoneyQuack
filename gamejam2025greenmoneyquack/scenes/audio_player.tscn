@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://51ojkouw00fk"]
+
+[ext_resource type="AudioStream" uid="uid://djyxn7mypq4vp" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-12-21.ogg" id="1_syohv"]
+[ext_resource type="Script" uid="uid://dr3ulgwl8pbxb" path="res://scripts/main_sfx_player.gd" id="2_qbjj0"]
+[ext_resource type="AudioStream" uid="uid://ds5qtq31c6f3j" path="res://audio/main_audio_effects/game-eat-sound-83240.wav" id="3_mfaxx"]
+
+[node name="AudioPlayer" type="Node2D"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_syohv")
+autoplay = true
+
+[node name="SFX_Player" type="AudioStreamPlayer" parent="."]
+script = ExtResource("2_qbjj0")
+streams = Array[AudioStream]([ExtResource("3_mfaxx")])
