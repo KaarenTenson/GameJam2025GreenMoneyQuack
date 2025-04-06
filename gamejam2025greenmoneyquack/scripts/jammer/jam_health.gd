@@ -19,6 +19,7 @@ func hit(pizza: Pizza):
 
 func correct():
 	#print(health)
+	Global.emit_hitCorrect(global_position)
 	Global.count_pizzas()
 	health -= 1
 	if health < 1:
@@ -26,5 +27,6 @@ func correct():
 		get_parent().die()
 
 func wrong():
+	Global.emit_hitFalse(global_position)
 	animator.play("Unhappy")
 	Global.decrease_health()

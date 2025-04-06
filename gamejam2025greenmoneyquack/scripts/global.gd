@@ -10,6 +10,11 @@ var pizzacounter = 0
 
 signal debtInc
 signal hpDec
+signal hitWall(arg:Vector2)
+signal hitCorrect(arg:Vector2)
+signal hitFalse(arg:Vector2)
+signal missed(arg:Vector2)
+signal shoot
 
 enum pizza {
 	MEAT,
@@ -43,3 +48,23 @@ func count_pizzas():
 			pizzacounter = 0
 			
 	pizzacounter+=1
+
+func emit_hitWall(position:Vector2):
+	print("emit hitWall")
+	hitWall.emit(position)
+
+func emit_hitFalse(position:Vector2):
+	print("emit hitFalse")
+	hitFalse.emit(position)
+
+func emit_hitCorrect(position:Vector2):
+	print("emit hitCorrect")
+	hitCorrect.emit(position)
+
+func emit_missed(position:Vector2):
+	print("emit missed")
+	missed.emit(position)
+
+func emit_shoot():
+	print("emit shoot")
+	shoot.emit()
