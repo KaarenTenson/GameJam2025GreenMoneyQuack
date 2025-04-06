@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://ckkfuud82cb7d" path="res://scripts/jammer/jammer.gd" id="1_udmue"]
 [ext_resource type="Script" uid="uid://cwf5b4qk80dy0" path="res://scripts/jammer/jam_hit_box.gd" id="3_dml03"]
 [ext_resource type="SpriteFrames" uid="uid://dyw84nrofoy6g" path="res://animations/Mjammers/1.tres" id="3_sjt4p"]
-[ext_resource type="Script" uid="uid://cubimofwsr4nq" path="res://scenes/jammer_animation.gd" id="15_ep0gd"]
+[ext_resource type="Script" path="res://scenes/jammer_animation.gd" id="15_ep0gd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dml03"]
 size = Vector2(248.316, 125.954)
