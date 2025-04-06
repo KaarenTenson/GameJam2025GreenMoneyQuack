@@ -8,10 +8,10 @@
 [ext_resource type="Script" uid="uid://eusp3qai6qqp" path="res://scenes/main_ui.gd" id="5_choun"]
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="5_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://bnjtaybgkinjr" path="res://scenes/wall.tscn" id="5_tbgi4"]
-[ext_resource type="PackedScene" path="res://scenes/Finish.tscn" id="9_85g3d"]
+[ext_resource type="PackedScene" uid="uid://bp8k5ooj77vph" path="res://scenes/Finish.tscn" id="9_85g3d"]
 [ext_resource type="PackedScene" uid="uid://5q3gc183gvdw" path="res://scenes/generator.tscn" id="10_choun"]
 [ext_resource type="PackedScene" uid="uid://wtxr53ewwc10" path="res://scenes/wall_generator.tscn" id="11_ya4ey"]
-[ext_resource type="PackedScene" uid="uid://51ojkouw00fk" path="res://scenes/audio_player.tscn" id="12_eb6dy"]
+[ext_resource type="PackedScene" uid="uid://cm0w2lnsqitqs" path="res://scenes/audio_player.tscn" id="12_eb6dy"]
 
 [sub_resource type="Animation" id="Animation_a8y0u"]
 length = 0.001
@@ -88,13 +88,15 @@ _data = {
 &"zoom_in": SubResource("Animation_trceg")
 }
 
-[node name="Main" type="Node2D"]
+[node name="Main2" type="Node2D"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_a8y0u")
 }
 script = ExtResource("1_a8y0u")
+
+[node name="audioPlayers" parent="." instance=ExtResource("12_eb6dy")]
 
 [node name="GameManager" type="Node" parent="."]
 script = ExtResource("1_jyhfs")
@@ -246,5 +248,3 @@ position = Vector2(497, 596)
 
 [node name="Wall" parent="." instance=ExtResource("5_tbgi4")]
 position = Vector2(-497, -54)
-
-[node name="audioPlayers" parent="." instance=ExtResource("12_eb6dy")]

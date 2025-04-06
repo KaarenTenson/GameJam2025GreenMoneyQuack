@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://51ojkouw00fk"]
+[gd_scene load_steps=13 format=3 uid="uid://cm0w2lnsqitqs"]
 
 [ext_resource type="AudioStream" uid="uid://djyxn7mypq4vp" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-12-21.ogg" id="1_syohv"]
 [ext_resource type="Script" uid="uid://dr3ulgwl8pbxb" path="res://scripts/main_sfx_player.gd" id="2_qbjj0"]
