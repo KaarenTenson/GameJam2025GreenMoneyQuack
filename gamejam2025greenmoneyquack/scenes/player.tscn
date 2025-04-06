@@ -18,7 +18,7 @@ script = ExtResource("3_qhqgy")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.1, 0.1)
 sprite_frames = ExtResource("3_dqkch")
-animation = &"Throw_L"
+animation = &"Throw_R"
 script = ExtResource("4_qlg0r")
 
 [node name="Area2D" type="Area2D" parent="."]
