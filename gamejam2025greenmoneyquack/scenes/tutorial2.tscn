@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bhqcuvk0b47kq"]
+[gd_scene load_steps=17 format=3 uid="uid://bhqcuvk0b47kq"]
 
 [ext_resource type="Script" uid="uid://drmv60j3bcis2" path="res://scenes/main_player_animation.gd" id="1_2g7ew"]
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="2_cdyx8"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dyoo02ktjidrx" path="res://scenes/jammer.tscn" id="10_jfwxr"]
 [ext_resource type="PackedScene" uid="uid://cm0w2lnsqitqs" path="res://scenes/audio_player.tscn" id="11_bu7yn"]
 [ext_resource type="PackedScene" uid="uid://bp8k5ooj77vph" path="res://scenes/Finish.tscn" id="11_pno41"]
+[ext_resource type="Theme" uid="uid://jqjecopnrrud" path="res://themes/blackBorder.tres" id="13_iw8yh"]
 
 [sub_resource type="Animation" id="Animation_a8y0u"]
 length = 0.001
@@ -112,6 +113,7 @@ move_speed = 0.0
 accseleration = 20.0
 
 [node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(0, -2)
 offset = Vector2(0, 260)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -178,7 +180,7 @@ position = Vector2(676, 1541)
 pizza = 1
 
 [node name="Aeglustaja" parent="Jammijad" instance=ExtResource("9_jfwxr")]
-position = Vector2(17, -185)
+position = Vector2(17, -216)
 oota_klick = true
 
 [node name="Aeglustaja2" parent="Jammijad" instance=ExtResource("9_jfwxr")]
@@ -220,13 +222,19 @@ position = Vector2(411, 1707)
 
 [node name="AudioPlayer" parent="." instance=ExtResource("11_bu7yn")]
 
-[node name="Labels" type="Node" parent="."]
+[node name="Labels" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+theme = ExtResource("13_iw8yh")
 
 [node name="Label" type="Label" parent="Labels"]
 offset_left = -65.0
 offset_top = -408.0
 offset_right = 904.0
 offset_bottom = -267.0
+theme = ExtResource("13_iw8yh")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
 theme_override_font_sizes/font_size = 50
 text = "These hungry jammers want your pizzas
 Throw them pizzas with left click"
