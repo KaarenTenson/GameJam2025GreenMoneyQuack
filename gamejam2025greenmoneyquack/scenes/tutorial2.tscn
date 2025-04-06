@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://wre6k3fnrk4k"]
+[gd_scene load_steps=16 format=3 uid="uid://bhqcuvk0b47kq"]
 
 [ext_resource type="Script" uid="uid://drmv60j3bcis2" path="res://scenes/main_player_animation.gd" id="1_2g7ew"]
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="2_cdyx8"]
@@ -6,7 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="4_xe87k"]
 [ext_resource type="PackedScene" uid="uid://d4kd5syfoylgt" path="res://scenes/player.tscn" id="5_ypr7c"]
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="8_1he0l"]
+[ext_resource type="PackedScene" uid="uid://dlya265ukijvi" path="res://scenes/aeglustaja.tscn" id="9_jfwxr"]
 [ext_resource type="Script" uid="uid://eusp3qai6qqp" path="res://scenes/main_ui.gd" id="9_olai8"]
+[ext_resource type="PackedScene" uid="uid://bnjtaybgkinjr" path="res://scenes/wall.tscn" id="10_bu7yn"]
 [ext_resource type="PackedScene" uid="uid://dyoo02ktjidrx" path="res://scenes/jammer.tscn" id="10_jfwxr"]
 [ext_resource type="PackedScene" uid="uid://cm0w2lnsqitqs" path="res://scenes/audio_player.tscn" id="11_bu7yn"]
 [ext_resource type="PackedScene" uid="uid://bp8k5ooj77vph" path="res://scenes/Finish.tscn" id="11_pno41"]
@@ -161,21 +163,98 @@ size_flags_vertical = 1
 [node name="Jammijad" type="Node" parent="."]
 
 [node name="Jammer" parent="Jammijad" instance=ExtResource("10_jfwxr")]
-position = Vector2(723, 1598)
-rotation = -0.751158
-maxHealth = 10
+position = Vector2(695, -21)
 
 [node name="Jammer2" parent="Jammijad" instance=ExtResource("10_jfwxr")]
-position = Vector2(-732, 1563)
-rotation = 0.837758
+position = Vector2(-685, -53)
+scale = Vector2(-1, 1)
+
+[node name="Jammer3" parent="Jammijad" instance=ExtResource("10_jfwxr")]
+position = Vector2(-751, 1296)
 scale = Vector2(-1, 1)
 pizza = 1
 
+[node name="Jammer4" parent="Jammijad" instance=ExtResource("10_jfwxr")]
+position = Vector2(676, 1541)
+pizza = 1
+
+[node name="Jammer5" parent="Jammijad" instance=ExtResource("10_jfwxr")]
+position = Vector2(871, 1314)
+
+[node name="Aeglustaja" parent="Jammijad" instance=ExtResource("9_jfwxr")]
+position = Vector2(-6, 463)
+
+[node name="Aeglustaja2" parent="Jammijad" instance=ExtResource("9_jfwxr")]
+position = Vector2(-13, 1110)
+milleks_aeglustada = 10
+
 [node name="finish" parent="." instance=ExtResource("11_pno41")]
 position = Vector2(1, 3656)
+path = "res://scenes/main2.tscn"
 
 [node name="Generators" type="Node" parent="."]
 
 [node name="Walls" type="Node" parent="."]
 
+[node name="Wall" parent="Walls" instance=ExtResource("10_bu7yn")]
+position = Vector2(-814, 584)
+
+[node name="Wall2" parent="Walls" instance=ExtResource("10_bu7yn")]
+position = Vector2(-676, 584)
+
+[node name="Wall3" parent="Walls" instance=ExtResource("10_bu7yn")]
+position = Vector2(-538, 584)
+
+[node name="Wall4" parent="Walls" instance=ExtResource("10_bu7yn")]
+position = Vector2(409, 1456)
+
+[node name="Wall7" parent="Walls" instance=ExtResource("10_bu7yn")]
+position = Vector2(528, 1312)
+
+[node name="Wall8" parent="Walls" instance=ExtResource("10_bu7yn")]
+position = Vector2(661, 1178)
+
+[node name="Wall5" parent="Walls" instance=ExtResource("10_bu7yn")]
+position = Vector2(409, 1580)
+
+[node name="Wall6" parent="Walls" instance=ExtResource("10_bu7yn")]
+position = Vector2(411, 1707)
+
 [node name="AudioPlayer" parent="." instance=ExtResource("11_bu7yn")]
+
+[node name="Labels" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Labels"]
+offset_left = -866.0
+offset_top = -373.0
+offset_right = -21.0
+offset_bottom = -232.0
+theme_override_font_sizes/font_size = 50
+text = "These hungry jammers want your pizzas
+Throw them pizzas with leht click"
+
+[node name="Label2" type="Label" parent="Labels"]
+offset_left = -892.0
+offset_top = 330.0
+offset_right = 77.0
+offset_bottom = 471.0
+theme_override_font_sizes/font_size = 50
+text = "Try to throw pizzas at servers and see the depth of dept"
+
+[node name="Label3" type="Label" parent="Labels"]
+offset_left = -941.0
+offset_top = 1000.0
+offset_right = -258.0
+offset_bottom = 1141.0
+theme_override_font_sizes/font_size = 50
+text = "Wegans want vegan pizzas
+Left click to throw them"
+
+[node name="Label4" type="Label" parent="Labels"]
+offset_left = -506.0
+offset_top = 1199.0
+offset_right = 831.0
+offset_bottom = 1340.0
+theme_override_font_sizes/font_size = 50
+text = "Your Hp will go down when you don't feed a jammer or 
+throw them the wrong kind of pizza"
