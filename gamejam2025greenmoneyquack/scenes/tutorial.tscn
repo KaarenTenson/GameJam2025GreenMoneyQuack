@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://cp6dl2pd7048r"]
 
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="1_4kmhl"]
-[ext_resource type="Script" uid="uid://cipx7rvk1btng" path="res://scripts/tutorial.gd" id="2_ph3nu"]
-[ext_resource type="Theme" uid="uid://j26gx7crfk12" path="res://themes/button_label.tres" id="3_4kmhl"]
+[ext_resource type="Script" path="res://scripts/tutorial.gd" id="2_ph3nu"]
+[ext_resource type="Theme" path="res://themes/button_label.tres" id="3_4kmhl"]
 [ext_resource type="AudioStream" uid="uid://l2u2ra5mk0q6" path="res://audio/button/ciapaqua__confirm_sound.mp3" id="3_ph3nu"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6e1uj"]

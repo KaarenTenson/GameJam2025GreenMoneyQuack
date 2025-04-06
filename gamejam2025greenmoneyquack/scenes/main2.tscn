@@ -9,7 +9,7 @@
 [ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="13_jhcjm"]
 [ext_resource type="PackedScene" uid="uid://vdhhhhbygsyj" path="res://scenes/aeglustaja.tscn" id="13_r8a5h"]
 [ext_resource type="Script" uid="uid://eusp3qai6qqp" path="res://scenes/main_ui.gd" id="14_28w4p"]
-[ext_resource type="PackedScene" path="res://scenes/Finish.tscn" id="15_63uc6"]
+[ext_resource type="PackedScene" uid="uid://bp8k5ooj77vph" path="res://scenes/Finish.tscn" id="15_63uc6"]
 [ext_resource type="PackedScene" uid="uid://5q3gc183gvdw" path="res://scenes/generator.tscn" id="16_bfdpt"]
 [ext_resource type="PackedScene" uid="uid://wtxr53ewwc10" path="res://scenes/wall_generator.tscn" id="17_alev3"]
 [ext_resource type="PackedScene" uid="uid://bnjtaybgkinjr" path="res://scenes/wall.tscn" id="18_h28et"]
@@ -288,14 +288,35 @@ position = Vector2(-914, 8184)
 [node name="Generator28" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(-688, 8094)
 
+[node name="Generator37" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-802, 8136)
+
+[node name="Generator39" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-625, 9049)
+
+[node name="Generator40" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-681, 9132)
+
+[node name="Generator41" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-725, 9211)
+
 [node name="Generator29" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(663, 8111)
 
+[node name="Generator38" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(779, 8185)
+
 [node name="Generator30" parent="Generators" instance=ExtResource("16_bfdpt")]
-position = Vector2(-681.555, 9155.9)
+position = Vector2(-864, 9372)
 
 [node name="Generator31" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(-808.555, 9296.9)
+
+[node name="Generator47" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-900, 9204)
+
+[node name="Generator48" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-819, 9123)
 
 [node name="Generator32" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(-924, 9476)
@@ -306,8 +327,23 @@ position = Vector2(889, 9587)
 [node name="Generator34" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(790, 9389)
 
+[node name="Generator46" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(928, 9456)
+
 [node name="Generator35" parent="Generators" instance=ExtResource("16_bfdpt")]
-position = Vector2(630, 9193)
+position = Vector2(626, 9289)
+
+[node name="Generator42" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(693, 9012)
+
+[node name="Generator43" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(659, 9150)
+
+[node name="Generator44" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(848, 9094)
+
+[node name="Generator45" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(888, 9263)
 
 [node name="Generator36" parent="Generators" instance=ExtResource("16_bfdpt")]
 position = Vector2(849, 8266)
@@ -380,5 +416,5 @@ position = Vector2(-497, 9934)
 [node name="audioPlayers" parent="." instance=ExtResource("12_lhxgd")]
 
 [node name="Aeglustaja" parent="." instance=ExtResource("13_r8a5h")]
-position = Vector2(-5, 8121)
+position = Vector2(0, 8441)
 milleks_aeglustada = 30
