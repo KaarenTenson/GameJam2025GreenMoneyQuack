@@ -1,5 +1,5 @@
 extends Control
-@onready var audio_stream_player: AudioStreamPlayer = $"../AudioStreamPlayer"
+@onready var audio_stream_player: AudioStreamPlayer = $AudioStreamPlayer
 
 @export var exit_button: Button 
 func addsound(node:Node): 
@@ -14,4 +14,4 @@ func _ready() -> void:
 	addsound(get_tree().root)
 	exit_button.pressed.connect(func(): 
 		await get_tree().create_timer(0.25).timeout
-		get_tree().change_scene_to_file("res://scenes/main.tscn"))
+		get_tree().change_scene_to_file("res://scenes/main2.tscn"))
