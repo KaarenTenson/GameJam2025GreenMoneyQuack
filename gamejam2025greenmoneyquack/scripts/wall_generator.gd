@@ -21,7 +21,10 @@ func decide():
 	
 	
 	$"../../Walls".add_child(walll)
-	print("Generated wall")
+	#print("Generated wall")
+	
+	if $"../../player".global_position.x < global_position.x:
+		walll.apply_scale(Vector2(-1, 1))
 
 
 
