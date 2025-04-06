@@ -112,7 +112,7 @@ move_speed = 0.0
 accseleration = 20.0
 
 [node name="Camera2D" type="Camera2D" parent="player"]
-offset = Vector2(0, 300)
+offset = Vector2(0, 260)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
