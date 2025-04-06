@@ -178,9 +178,6 @@ pizza = 1
 position = Vector2(676, 1541)
 pizza = 1
 
-[node name="Jammer5" parent="Jammijad" instance=ExtResource("10_jfwxr")]
-position = Vector2(871, 1314)
-
 [node name="Aeglustaja" parent="Jammijad" instance=ExtResource("9_jfwxr")]
 position = Vector2(-6, 463)
 milleks_aeglustada = 10
