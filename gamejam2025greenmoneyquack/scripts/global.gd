@@ -36,7 +36,6 @@ func decrease_health():
 	hpDec.emit()
 	
 func reset():
-	debt=0
 	health=3
 	pizzacounter = 0
 	hpDec.emit()
