@@ -1,0 +1,267 @@
+[gd_scene load_steps=22 format=3 uid="uid://dfplas2udqfy2"]
+
+[ext_resource type="AudioStream" uid="uid://djyxn7mypq4vp" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-12-21.ogg" id="1_7oi8n"]
+[ext_resource type="Script" uid="uid://drmv60j3bcis2" path="res://scenes/main_player_animation.gd" id="2_gs8qe"]
+[ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="3_pr66g"]
+[ext_resource type="PackedScene" path="res://scenes/BackGround.tscn" id="4_2jfmm"]
+[ext_resource type="Texture2D" uid="uid://c6qk20163m1dm" path="res://art/leveli pizza.png" id="5_7obif"]
+[ext_resource type="PackedScene" uid="uid://d4kd5syfoylgt" path="res://scenes/player.tscn" id="6_1reov"]
+[ext_resource type="Script" uid="uid://croip4k6ga654" path="res://scripts/daniell_sound_effects.gd" id="7_1dis4"]
+[ext_resource type="AudioStream" uid="uid://d151xh4lf670i" path="res://audio/Daniel_Lines/Daniel_Lines/äraLiiguta_1.mp3" id="8_c77lx"]
+[ext_resource type="AudioStream" uid="uid://dja60wll7507j" path="res://audio/Daniel_Lines/Daniel_Lines/jahArusaadav_1.mp3" id="9_b77ej"]
+[ext_resource type="AudioStream" uid="uid://bbwmyscabcxut" path="res://audio/Daniel_Lines/Daniel_Lines/järgmiseKorrani_1.mp3" id="10_ljnj7"]
+[ext_resource type="AudioStream" uid="uid://baekah43xh27e" path="res://audio/Daniel_Lines/Daniel_Lines/korvpalliTiimi_1.mp3" id="11_0wgk2"]
+[ext_resource type="AudioStream" uid="uid://cxsxt36oo0e1q" path="res://audio/Daniel_Lines/Daniel_Lines/teidOnAinaRohkem_1.mp3" id="12_sws6j"]
+[ext_resource type="Theme" uid="uid://cp2faysunucaq" path="res://themes/mainMenuTheme.tres" id="13_jhcjm"]
+[ext_resource type="Script" uid="uid://eusp3qai6qqp" path="res://scenes/main_ui.gd" id="14_28w4p"]
+[ext_resource type="PackedScene" path="res://scenes/Finish.tscn" id="15_63uc6"]
+[ext_resource type="PackedScene" uid="uid://5q3gc183gvdw" path="res://scenes/generator.tscn" id="16_bfdpt"]
+[ext_resource type="PackedScene" uid="uid://wtxr53ewwc10" path="res://scenes/wall_generator.tscn" id="17_alev3"]
+[ext_resource type="PackedScene" uid="uid://bnjtaybgkinjr" path="res://scenes/wall.tscn" id="18_h28et"]
+
+[sub_resource type="Animation" id="Animation_a8y0u"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("player/Camera2D:zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("player:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2, -474)]
+}
+
+[sub_resource type="Animation" id="Animation_trceg"]
+resource_name = "zoom_in"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("player/Camera2D:zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1.5, 1.5), Vector2(1.25, 1.25), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("player:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.03333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2, -474), Vector2(2, -474)]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("player")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(2),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"start_shooting"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a8y0u"]
+_data = {
+&"RESET": SubResource("Animation_a8y0u"),
+&"zoom_in": SubResource("Animation_trceg")
+}
+
+[node name="Main" type="Node2D"]
+
+[node name="audioPlayers" type="Node" parent="."]
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="audioPlayers"]
+stream = ExtResource("1_7oi8n")
+autoplay = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_a8y0u")
+}
+script = ExtResource("2_gs8qe")
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("3_pr66g")
+
+[node name="Background" parent="." instance=ExtResource("4_2jfmm")]
+position = Vector2(0, 1278)
+
+[node name="Wall" parent="Background" instance=ExtResource("18_h28et")]
+position = Vector2(-819, 2732)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-12, 4566)
+texture = ExtResource("5_7obif")
+
+[node name="player" parent="." instance=ExtResource("6_1reov")]
+position = Vector2(2, -474)
+move_speed = 0.0
+accseleration = 20.0
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(0, 152)
+
+[node name="daniellSoundEffects" type="AudioStreamPlayer" parent="player"]
+volume_db = 24.0
+bus = &"SFX"
+playback_type = 1
+script = ExtResource("7_1dis4")
+streams = Array[AudioStream]([ExtResource("8_c77lx"), ExtResource("9_b77ej"), ExtResource("10_ljnj7"), ExtResource("11_0wgk2"), ExtResource("12_sws6j")])
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer" node_paths=PackedStringArray("healt_bar")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("13_jhcjm")
+script = ExtResource("14_28w4p")
+healt_bar = NodePath("HBoxContainer/MarginContainer/ProgressBar")
+
+[node name="Label" type="Label" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 111
+text = "Depth of debt: "
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 137.0
+offset_right = 754.0
+offset_bottom = 319.0
+
+[node name="Label2" type="Label" parent="CanvasLayer/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+size_flags_stretch_ratio = 0.25
+theme_override_font_sizes/font_size = 136
+text = "Hp: "
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Control/HBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+
+[node name="Jammijad" type="Node" parent="."]
+
+[node name="finish" parent="." instance=ExtResource("15_63uc6")]
+position = Vector2(26, 11948)
+
+[node name="Generators" type="Node" parent="."]
+
+[node name="Generator" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(788, 1390)
+
+[node name="Generator3" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-711, 3281)
+
+[node name="Generator12" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(851, 393)
+
+[node name="Generator13" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(660, 1455)
+
+[node name="Generator14" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(892, 2110)
+
+[node name="Generator15" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-895, 2154)
+
+[node name="Generator16" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-706, 2392)
+
+[node name="Generator10" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-829, 332)
+
+[node name="Generator4" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(740, 2259)
+
+[node name="Generator5" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-898, 3282)
+
+[node name="Generator2" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-690, 664)
+
+[node name="Generator6" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(669, 3296)
+
+[node name="Generator7" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(-914, 4559)
+
+[node name="Generator9" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(737, 722)
+
+[node name="Generator8" parent="Generators" instance=ExtResource("16_bfdpt")]
+position = Vector2(886, 3219)
+
+[node name="WallGenerator" parent="Generators" instance=ExtResource("17_alev3")]
+position = Vector2(590, 998)
+
+[node name="WallGenerator2" parent="Generators" instance=ExtResource("17_alev3")]
+position = Vector2(732, 998)
+
+[node name="WallGenerator3" parent="Generators" instance=ExtResource("17_alev3")]
+position = Vector2(564, 2744)
+
+[node name="WallGenerator4" parent="Generators" instance=ExtResource("17_alev3")]
+position = Vector2(858, 993)
+
+[node name="WallGenerator6" parent="Generators" instance=ExtResource("17_alev3")]
+position = Vector2(-844, 1289)
+
+[node name="WallGenerator8" parent="Generators" instance=ExtResource("17_alev3")]
+position = Vector2(-578, 1290)
+
+[node name="WallGenerator9" parent="Generators" instance=ExtResource("17_alev3")]
+position = Vector2(-712, 1290)
+
+[node name="WallGenerator7" parent="Generators" instance=ExtResource("17_alev3")]
+position = Vector2(824, 2747)
+
+[node name="WallGenerator5" parent="Generators" instance=ExtResource("17_alev3")]
+position = Vector2(696, 2747)
+
+[node name="Walls" type="Node" parent="."]
+
+[node name="Wall" parent="." instance=ExtResource("18_h28et")]
+position = Vector2(439, 2745)
