@@ -7,8 +7,8 @@
 script = ExtResource("1_5yxne")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(0, -78.5)
-scale = Vector2(1, 8.85)
+position = Vector2(9.99999, -78.5)
+scale = Vector2(12.8, 8.85)
 
 [node name="Jammer" parent="." instance=ExtResource("2_w5vnv")]
 
