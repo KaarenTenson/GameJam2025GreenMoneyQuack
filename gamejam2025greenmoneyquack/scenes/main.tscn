@@ -1,6 +1,6 @@
 [gd_scene load_steps=24 format=3 uid="uid://ctbk2e3ixxtnd"]
 
-[ext_resource type="Script" uid="uid://drmv60j3bcis2" path="res://scenes/main_player_animation.gd" id="1_a8y0u"]
+[ext_resource type="Script" path="res://scenes/main_player_animation.gd" id="1_a8y0u"]
 [ext_resource type="Script" uid="uid://bk0gb1c5hjr0f" path="res://scripts/game_manager.gd" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://d4kd5syfoylgt" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://dr3ulgwl8pbxb" path="res://scripts/main_sfx_player.gd" id="2_0ld40"]
@@ -14,10 +14,10 @@
 [ext_resource type="AudioStream" uid="uid://d151xh4lf670i" path="res://audio/Daniel_Lines/Daniel_Lines/äraLiiguta_1.mp3" id="8_dp3eg"]
 [ext_resource type="AudioStream" uid="uid://djyxn7mypq4vp" path="res://audio/music-loop-bundle-download_2024_q4/Sketchbook 2024-12-21.ogg" id="8_tipki"]
 [ext_resource type="AudioStream" uid="uid://dja60wll7507j" path="res://audio/Daniel_Lines/Daniel_Lines/jahArusaadav_1.mp3" id="9_0ld40"]
-[ext_resource type="PackedScene" uid="uid://bp8k5ooj77vph" path="res://scenes/Finish.tscn" id="9_85g3d"]
+[ext_resource type="PackedScene" path="res://scenes/Finish.tscn" id="9_85g3d"]
 [ext_resource type="PackedScene" uid="uid://5q3gc183gvdw" path="res://scenes/generator.tscn" id="10_choun"]
 [ext_resource type="AudioStream" uid="uid://bbwmyscabcxut" path="res://audio/Daniel_Lines/Daniel_Lines/järgmiseKorrani_1.mp3" id="10_gqmmt"]
-[ext_resource type="PackedScene" uid="uid://wtxr53ewwc10" path="res://scenes/wall_generator.tscn" id="11_ya4ey"]
+[ext_resource type="PackedScene" path="res://scenes/wall_generator.tscn" id="11_ya4ey"]
 [ext_resource type="AudioStream" uid="uid://baekah43xh27e" path="res://audio/Daniel_Lines/Daniel_Lines/korvpalliTiimi_1.mp3" id="11_yc10j"]
 [ext_resource type="AudioStream" uid="uid://cxsxt36oo0e1q" path="res://audio/Daniel_Lines/Daniel_Lines/teidOnAinaRohkem_1.mp3" id="12_jscy8"]
 
