@@ -1,7 +1,7 @@
 extends Node2D
 class_name JamHealth
 
-@onready var animator: JammerAnimator = $"../AnimatedSprite2D"
+@onready var animator: JammerAnimator = $"../Node/Animations"
 var health
 var type = global.pizza.MEAT
 
@@ -23,10 +23,10 @@ func correct():
 	Global.count_pizzas()
 	health -= 1
 	if health < 1:
-		animator.play("Happy")
+		animator.change("Happy")
 		get_parent().die()
 
 func wrong():
 	Global.emit_hitFalse(global_position)
-	animator.play("Unhappy")
+	animator.change("Unhappy")
 	Global.decrease_health()

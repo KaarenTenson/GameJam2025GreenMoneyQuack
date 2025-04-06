@@ -26,7 +26,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3_llhhc")
 }],
-"loop": false,
+"loop": true,
 "name": &"Waiting",
 "speed": 5.0
 }]
