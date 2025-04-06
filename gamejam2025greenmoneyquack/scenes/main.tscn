@@ -102,7 +102,7 @@ script = ExtResource("1_a8y0u")
 script = ExtResource("1_jyhfs")
 
 [node name="Background" parent="." instance=ExtResource("2_tefeu")]
-position = Vector2(8, 1278)
+position = Vector2(0, 1278)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
@@ -115,7 +115,7 @@ move_speed = 0.0
 accseleration = 20.0
 
 [node name="Camera2D" type="Camera2D" parent="player"]
-position = Vector2(-11, 152)
+position = Vector2(0, 152)
 
 [node name="daniellSoundEffects" type="AudioStreamPlayer" parent="player"]
 stream = ExtResource("6_a8y0u")
